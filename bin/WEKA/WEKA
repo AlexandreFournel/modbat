@@ -14,9 +14,12 @@
 
    This will generate about six files for each test case.
 
+
+DONE
+
 4. Create a line/word list of ALL logs (results of ALL files above),
    > 1000 files, into a word list.
-   One "word" list should have unique lines, the other one unique words.
+   One "line" list should have unique lines, the other one unique words.
    Probably:
    find ... -name '*.log.*' -o '*.out.*' | xargs cat | sort -u > word-list
    This will give you a line-list. Perhaps this is a good first step to get
