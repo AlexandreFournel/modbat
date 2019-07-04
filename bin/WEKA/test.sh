@@ -12,7 +12,7 @@ NAME_FILE_WITHOUT_SLASH="ERROR"
         NAME_FILE=${FILE_WITHOUT_MAIN_PATH/\/config\//}
     
     elif [[ $FILE_WITHOUT_MAIN_PATH =~ "/modbat/" ]]; then 
-        FOLDER="Files/mobat/"
+        FOLDER="Files/modbat/"
         NAME_FILE=${FILE_WITHOUT_MAIN_PATH/\/modbat\//}
     else
         FOLDER="Files/modbat.config.ConfigTest/"
@@ -27,3 +27,7 @@ NAME_FILE_WITHOUT_SLASH="ERROR"
     grep '^.WARNING' $FILE > $FOLDER$NAME_FILE_WITHOUT_SLASH.warning
     grep -v '^\[' $FILE > $FOLDER$NAME_FILE_WITHOUT_SLASH.raw 
 done
+
+find Files/modbat.config.ConfigTest/. -name '*.log.*' -o -name '*.err.*' | xargs cat | sort -u > Files/modbat.config.ConfigTest/line_list
+find Files/config/. -name '*.log.*' -o -name '*.err.*' | xargs cat | sort -u > Files/config/line_list
+find Files/modbat/. -name '*.log.*' -o -name '*.err.*' | xargs cat | sort -u > Files/modbat/line_list
