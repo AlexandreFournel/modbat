@@ -1,0 +1,17 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel3.scala:10: dec
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel3.scala:12: skip
+[WARNING] modbat/test/GenLabel3.scala:10: dec
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel3.scala:8: inc
+[WARNING] modbat/test/GenLabel3.scala:10: dec
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel3.scala:10: dec
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel3.scala:10: dec

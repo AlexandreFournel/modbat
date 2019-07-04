@@ -1,0 +1,143 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-2: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-2: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-2: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-4: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-6: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-5: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-6: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-7: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-6: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-8: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-2: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-2: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-2: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-3: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-4: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-2: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-2: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-1: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-2: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-1: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-2: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:10: modbat.test.LoopTestWithLaunch-3: assert
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-3: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-4: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:16: modbat.test.LoopTestWithLaunch-5: launch
+[WARNING] modbat/test/LoopTestWithLaunch.scala:13: modbat.test.LoopTestWithLaunch-4: assert

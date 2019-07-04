@@ -1,0 +1,104 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:12: increment
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement
+[WARNING] modbat/test/GenLabel2.scala:13: decrement

@@ -1,0 +1,7 @@
+[INFO] 20 tests executed, 10 ok, 10 failed.
+[INFO] One type of test failure:
+[INFO] 1) java.lang.AssertionError: assertion failed at assert
+[INFO]    89a82931be29e65 27fe2d950fc74b21 19b6aa1b14a29017 85780661bf76533 486e122d1bcbade7 745035c2b643033 1e528010d3d2d54 8d32a08e0d0b1183 5a92477004cf57fb 284ca782182a253f
+[INFO] 2 states covered (100 % out of 2),
+[INFO] 2 transitions covered (100 % out of 2).
+[INFO] Random seed for next test would be: 636e772f0798297b

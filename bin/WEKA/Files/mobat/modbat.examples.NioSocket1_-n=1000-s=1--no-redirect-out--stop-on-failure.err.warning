@@ -1,0 +1,8 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/examples/NioSocket1.scala:77: open
+[WARNING] modbat/examples/NioSocket1.scala:82: connect
+[WARNING] modbat/examples/NioSocket1.scala:117: finishConnect
+[WARNING] modbat/examples/NioSocket1.scala:120: readFrom
+[WARNING] modbat/examples/NioSocket1.scala:120: readFrom
+[WARNING] modbat/examples/NioSocket1.scala:120: readFrom

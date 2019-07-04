@@ -1,0 +1,6 @@
+[INFO] 5 tests executed, 5 ok, 0 failed.
+[INFO] modbat.test.ComplexLaunch: 3 states covered (100 % out of 3),
+[INFO] modbat.test.ComplexLaunch: 3 transitions covered (100 % out of 3).
+[INFO] modbat.test.Child: 3 states covered (100 % out of 3),
+[INFO] modbat.test.Child: 3 transitions covered (100 % out of 3).
+[INFO] Random seed for next test would be: 27fe2d950fc74b21

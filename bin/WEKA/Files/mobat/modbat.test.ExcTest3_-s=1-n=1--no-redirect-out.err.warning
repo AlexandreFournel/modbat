@@ -1,0 +1,4 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/ExcTest3.scala:7: nonDetCall
+[WARNING] modbat/test/ExcTest3.scala:15: assert

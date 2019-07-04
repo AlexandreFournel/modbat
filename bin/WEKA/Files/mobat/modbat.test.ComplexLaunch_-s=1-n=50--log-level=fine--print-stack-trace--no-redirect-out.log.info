@@ -1,0 +1,9 @@
+[INFO] 50 tests executed, 43 ok, 7 failed.
+[INFO] One type of test failure:
+[INFO] 1) java.lang.AssertionError: assertion failed at assert
+[INFO]    5ff50ec9279365d2 1e528010d3d2d54 8d32a08e0d0b1183 8102b494089e6116 46e3ffb302d6b70f 7c984b5d1a209c21 2a83b5bd2ae1ea70
+[INFO] modbat.test.ComplexLaunch: 3 states covered (100 % out of 3),
+[INFO] modbat.test.ComplexLaunch: 3 transitions covered (100 % out of 3).
+[INFO] modbat.test.Child: 3 states covered (100 % out of 3),
+[INFO] modbat.test.Child: 3 transitions covered (100 % out of 3).
+[INFO] Random seed for next test would be: 8b388ceb07e23410

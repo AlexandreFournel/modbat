@@ -1,0 +1,9 @@
+[INFO] 20 tests executed, 2 ok, 18 failed.
+[INFO] 2 types of test failures:
+[INFO] 1) java.lang.AssertionError: assertion failed: i = 1 at check
+[INFO]    402b73cd0066eaea 41530f4040856586 89a82931be29e65 27fe2d950fc74b21 19b6aa1b14a29017 85780661bf76533 745035c2b643033 1e528010d3d2d54 5a92477004cf57fb 284ca782182a253f 8e80db4b43867a5a 7bb4b043219b1ba6
+[INFO] 2) java.lang.AssertionError: assertion failed: i = 2 at check
+[INFO]    3ba471c1785a0175 49a846e52b813972 a410ce32fc39dfb 1690fa4e0c732f7d 8d32a08e0d0b1183 5e7dfc9e0a3af5da
+[INFO] 3 states covered (100 % out of 3),
+[INFO] 5 transitions covered (100 % out of 5).
+[INFO] Random seed for next test would be: 636e772f0798297b

@@ -1,0 +1,3 @@
+[WARNING] java.lang.IllegalArgumentException: not from failed require occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/IllArgTest.scala:13: illArg

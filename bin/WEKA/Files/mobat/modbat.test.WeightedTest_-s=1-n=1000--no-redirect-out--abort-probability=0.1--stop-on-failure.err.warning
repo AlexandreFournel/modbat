@@ -1,0 +1,12 @@
+[WARNING] java.lang.AssertionError: assertion failed: n = 10 occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/WeightedTest.scala:8: assert
+[WARNING] modbat/test/WeightedTest.scala:8: assert
+[WARNING] modbat/test/WeightedTest.scala:8: assert
+[WARNING] modbat/test/WeightedTest.scala:8: assert
+[WARNING] modbat/test/WeightedTest.scala:8: assert
+[WARNING] modbat/test/WeightedTest.scala:8: assert
+[WARNING] modbat/test/WeightedTest.scala:8: assert
+[WARNING] modbat/test/WeightedTest.scala:8: assert
+[WARNING] modbat/test/WeightedTest.scala:8: assert
+[WARNING] modbat/test/WeightedTest.scala:10: assert

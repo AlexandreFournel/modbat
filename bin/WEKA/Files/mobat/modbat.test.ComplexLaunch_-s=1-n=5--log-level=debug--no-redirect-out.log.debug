@@ -1,0 +1,258 @@
+[DEBUG] Adding build/modbat-test.jar to classpath.
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from init to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to done
+[DEBUG] --- Exploring model ---
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: init
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 1 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] Model modbat.test.ComplexLaunch-1 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] No more successors.
+[DEBUG] --- Resetting to initial state ---
+[DEBUG] Identical model found: modbat.test.ComplexLaunch-1
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from init to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to done
+[DEBUG] --- Exploring model ---
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: init
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 1 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.Child-1: Registered state transition from init to running
+[DEBUG] modbat.test.Child-1: Registered state transition from running to running
+[DEBUG] modbat.test.Child-1: Registered state transition from running to done
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 2 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.Child-1: Current state: init
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] Model modbat.test.ComplexLaunch-1 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: init
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 1 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 2 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 3 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] Model modbat.test.Child-1 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: done
+[DEBUG] No more successors.
+[DEBUG] --- Resetting to initial state ---
+[DEBUG] Identical model found: modbat.test.ComplexLaunch-1
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from init to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to done
+[DEBUG] --- Exploring model ---
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: init
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 1 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] Identical model found: modbat.test.Child-1
+[DEBUG] modbat.test.Child-1: Registered state transition from init to running
+[DEBUG] modbat.test.Child-1: Registered state transition from running to running
+[DEBUG] modbat.test.Child-1: Registered state transition from running to done
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 2 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.Child-1: Current state: init
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] Identical model found: modbat.test.Child-1
+[DEBUG] modbat.test.Child-2: Registered state transition from init to running
+[DEBUG] modbat.test.Child-2: Registered state transition from running to running
+[DEBUG] modbat.test.Child-2: Registered state transition from running to done
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 3 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.Child-1: Current state: init
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.Child-2: Current state: init
+[DEBUG] modbat.test.Child-2: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-2 was visited 0 times.
+[DEBUG] Model modbat.test.ComplexLaunch-1 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: init
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.Child-2: Current state: init
+[DEBUG] modbat.test.Child-2: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-2 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 1 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.Child-2: Current state: init
+[DEBUG] modbat.test.Child-2: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-2 was visited 0 times.
+[DEBUG] Model modbat.test.Child-1 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: done
+[DEBUG] modbat.test.Child-2: Current state: init
+[DEBUG] modbat.test.Child-2: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-2 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: done
+[DEBUG] modbat.test.Child-2: Current state: running
+[DEBUG] modbat.test.Child-2: Possible successor: running
+[DEBUG] modbat.test.Child-2: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-2 was visited 1 times.
+[DEBUG] State done in model modbat.test.Child-2 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: done
+[DEBUG] modbat.test.Child-2: Current state: running
+[DEBUG] modbat.test.Child-2: Possible successor: running
+[DEBUG] modbat.test.Child-2: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-2 was visited 2 times.
+[DEBUG] State done in model modbat.test.Child-2 was visited 0 times.
+[DEBUG] Model modbat.test.Child-2 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: done
+[DEBUG] modbat.test.Child-2: Current state: done
+[DEBUG] No more successors.
+[DEBUG] --- Resetting to initial state ---
+[DEBUG] Identical model found: modbat.test.ComplexLaunch-1
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from init to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to done
+[DEBUG] --- Exploring model ---
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: init
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 1 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] Identical model found: modbat.test.Child-1
+[DEBUG] modbat.test.Child-1: Registered state transition from init to running
+[DEBUG] modbat.test.Child-1: Registered state transition from running to running
+[DEBUG] modbat.test.Child-1: Registered state transition from running to done
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 2 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.Child-1: Current state: init
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] Model modbat.test.ComplexLaunch-1 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: init
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 1 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 2 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] Model modbat.test.Child-1 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: done
+[DEBUG] No more successors.
+[DEBUG] --- Resetting to initial state ---
+[DEBUG] Identical model found: modbat.test.ComplexLaunch-1
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from init to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to active
+[DEBUG] modbat.test.ComplexLaunch-1: Registered state transition from active to done
+[DEBUG] --- Exploring model ---
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: init
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 1 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] Identical model found: modbat.test.Child-1
+[DEBUG] modbat.test.Child-1: Registered state transition from init to running
+[DEBUG] modbat.test.Child-1: Registered state transition from running to running
+[DEBUG] modbat.test.Child-1: Registered state transition from running to done
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: active
+[DEBUG] modbat.test.ComplexLaunch-1: Possible successor: done
+[DEBUG] State active in model modbat.test.ComplexLaunch-1 was visited 2 times.
+[DEBUG] State done in model modbat.test.ComplexLaunch-1 was visited 0 times.
+[DEBUG] modbat.test.Child-1: Current state: init
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] Model modbat.test.ComplexLaunch-1 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: init
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] State running in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 1 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 2 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 3 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: running
+[DEBUG] modbat.test.Child-1: Possible successor: running
+[DEBUG] modbat.test.Child-1: Possible successor: done
+[DEBUG] State running in model modbat.test.Child-1 was visited 4 times.
+[DEBUG] State done in model modbat.test.Child-1 was visited 0 times.
+[DEBUG] Model modbat.test.Child-1 has terminated.
+[DEBUG] modbat.test.ComplexLaunch-1: Current state: done
+[DEBUG] modbat.test.Child-1: Current state: done
+[DEBUG] No more successors.
+[DEBUG] --- Resetting to initial state ---

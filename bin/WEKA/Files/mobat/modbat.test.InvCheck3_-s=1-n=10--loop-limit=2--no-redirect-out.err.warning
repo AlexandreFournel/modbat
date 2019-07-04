@@ -1,0 +1,7 @@
+[WARNING] java.lang.AssertionError: assertion failed: i = 1 occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/InvCheck3.scala:12: skip
+[WARNING] modbat/test/InvCheck3.scala:13: skip
+[WARNING] modbat/test/InvCheck3.scala:7: inc
+[WARNING] modbat/test/InvCheck3.scala:14: skip
+[WARNING] modbat/test/InvCheck3.scala:9: check

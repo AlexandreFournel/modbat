@@ -1,0 +1,28 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/examples/CounterModel.scala:10: new Counter
+[WARNING] modbat/examples/CounterModel.scala:13: toggleSwitch
+[WARNING] modbat/examples/CounterModel.scala:16: inc
+[WARNING] modbat/examples/CounterModel.scala:19: inc
+[WARNING] modbat/examples/CounterModel.scala:25: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/examples/CounterModel.scala:10: new Counter
+[WARNING] modbat/examples/CounterModel.scala:13: toggleSwitch
+[WARNING] modbat/examples/CounterModel.scala:16: inc
+[WARNING] modbat/examples/CounterModel.scala:19: inc
+[WARNING] modbat/examples/CounterModel.scala:25: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/examples/CounterModel.scala:10: new Counter
+[WARNING] modbat/examples/CounterModel.scala:13: toggleSwitch
+[WARNING] modbat/examples/CounterModel.scala:16: inc
+[WARNING] modbat/examples/CounterModel.scala:19: inc
+[WARNING] modbat/examples/CounterModel.scala:25: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/examples/CounterModel.scala:10: new Counter
+[WARNING] modbat/examples/CounterModel.scala:13: toggleSwitch
+[WARNING] modbat/examples/CounterModel.scala:16: inc
+[WARNING] modbat/examples/CounterModel.scala:19: inc
+[WARNING] modbat/examples/CounterModel.scala:25: assert

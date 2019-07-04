@@ -1,0 +1,9 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/ChooseBool.scala:7: assert; choices = (1)
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/ChooseBool.scala:7: assert; choices = (1)
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/ChooseBool.scala:7: assert; choices = (1)

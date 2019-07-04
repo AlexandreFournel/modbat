@@ -1,0 +1,3 @@
+[WARNING] java.lang.NullPointerException occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/JoinNull.scala:7: join

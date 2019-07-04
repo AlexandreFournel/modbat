@@ -1,0 +1,7 @@
+[INFO] 5 tests executed, 4 ok, 1 failed.
+[INFO] One type of test failure:
+[INFO] 1) java.lang.AssertionError: assertion failed: Cannot mkdir "0/1/4" at launch
+[INFO]    41530f4040856586
+[INFO] 5 states covered (100 % out of 5),
+[INFO] 7 transitions covered (100 % out of 7).
+[INFO] Random seed for next test would be: 27fe2d950fc74b21

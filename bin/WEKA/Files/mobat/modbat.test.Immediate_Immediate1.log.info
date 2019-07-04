@@ -1,0 +1,6 @@
+[INFO] 100 tests executed, 100 ok, 0 failed.
+[INFO] modbat.test.Immediate: 1 states covered (100 % out of 1),
+[INFO] modbat.test.Immediate: 1 transitions covered (100 % out of 1).
+[INFO] modbat.test.Catches: 2 states covered (100 % out of 2),
+[INFO] modbat.test.Catches: 2 transitions covered (66 % out of 3).
+[INFO] Random seed for next test would be: e33f5272c52bf71

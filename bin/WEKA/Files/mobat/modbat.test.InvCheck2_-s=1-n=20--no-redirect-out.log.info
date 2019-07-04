@@ -1,0 +1,7 @@
+[INFO] 20 tests executed, 19 ok, 1 failed.
+[INFO] One type of test failure:
+[INFO] 1) java.lang.AssertionError: assertion failed: i = 0 at invariantCheck
+[INFO]    284ca782182a253f
+[INFO] 4 states covered (100 % out of 4),
+[INFO] 7 transitions covered (100 % out of 7).
+[INFO] Random seed for next test would be: 636e772f0798297b

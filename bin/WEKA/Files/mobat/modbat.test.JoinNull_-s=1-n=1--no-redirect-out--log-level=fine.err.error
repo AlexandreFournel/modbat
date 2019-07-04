@@ -1,0 +1,2 @@
+[ERROR] modbat.test.JoinNull-1 calls join(null) but parameter must be non-null.
+[ERROR] java.lang.NullPointerException

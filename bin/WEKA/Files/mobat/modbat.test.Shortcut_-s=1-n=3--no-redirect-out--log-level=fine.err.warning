@@ -1,0 +1,17 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/Shortcut.scala:12: count = ...
+[WARNING] modbat/test/Shortcut.scala:21: count
+[WARNING] modbat/test/Shortcut.scala:24: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/Shortcut.scala:12: count = ...
+[WARNING] modbat/test/Shortcut.scala:15: count
+[WARNING] modbat/test/Shortcut.scala:18: count
+[WARNING] modbat/test/Shortcut.scala:24: assert
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/Shortcut.scala:12: count = ...
+[WARNING] modbat/test/Shortcut.scala:15: count
+[WARNING] modbat/test/Shortcut.scala:18: count
+[WARNING] modbat/test/Shortcut.scala:24: assert

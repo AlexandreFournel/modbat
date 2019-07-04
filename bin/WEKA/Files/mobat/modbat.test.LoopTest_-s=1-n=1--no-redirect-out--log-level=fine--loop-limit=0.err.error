@@ -1,0 +1,8 @@
+[ERROR] java.lang.AssertionError: assertion failed
+[ERROR] 	at scala.Predef$.assert(Predef.scala)
+[ERROR] 	at modbat.dsl.Model$.assert(Model.scala)
+[ERROR] 	at modbat.dsl.Model$class.assert(Model.scala)
+[ERROR] 	at modbat.test.LoopTest.assert(LoopTest.scala)
+[ERROR] 	at modbat.test.LoopTest$$anonfun$1.apply$mcV$sp(LoopTest.scala)
+[ERROR] 	at modbat.test.LoopTest$$anonfun$1.apply(LoopTest.scala)
+[ERROR] 	at modbat.test.LoopTest$$anonfun$1.apply(LoopTest.scala)

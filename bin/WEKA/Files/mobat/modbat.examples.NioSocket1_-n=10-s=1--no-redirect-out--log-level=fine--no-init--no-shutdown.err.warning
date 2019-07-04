@@ -1,0 +1,12 @@
+[WARNING] java.net.ConnectException: Connection refused occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/examples/NioSocket1.scala:77: open
+[WARNING] modbat/examples/NioSocket1.scala:84: connect
+[WARNING] java.net.ConnectException: Connection refused occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/examples/NioSocket1.scala:77: open
+[WARNING] modbat/examples/NioSocket1.scala:84: connect
+[WARNING] java.net.ConnectException: Connection refused occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/examples/NioSocket1.scala:77: open
+[WARNING] modbat/examples/NioSocket1.scala:84: connect

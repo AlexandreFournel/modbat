@@ -1,0 +1,12 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/ObserverHarness.scala:8: modbat.test.ObserverHarness-1: launch
+[WARNING] modbat/test/ObserverHarness.scala:11: modbat.test.ObserverHarness-1: i
+[WARNING] modbat/test/TestObserver.scala:9: modbat.test.TestObserver-1: println
+[WARNING] modbat/test/ObserverHarness.scala:11: modbat.test.ObserverHarness-1: i
+[WARNING] modbat/test/TestObserver.scala:13: modbat.test.TestObserver-1: println
+[WARNING] modbat/test/TestObserver.scala:18: modbat.test.TestObserver-1: assert
+[WARNING] modbat/test/ObserverHarness.scala:11: modbat.test.ObserverHarness-1: i
+[WARNING] modbat/test/TestObserver.scala:18: modbat.test.TestObserver-1: assert
+[WARNING] modbat/test/ObserverHarness.scala:11: modbat.test.ObserverHarness-1: i
+[WARNING] modbat/test/TestObserver.scala:18: modbat.test.TestObserver-1: assert

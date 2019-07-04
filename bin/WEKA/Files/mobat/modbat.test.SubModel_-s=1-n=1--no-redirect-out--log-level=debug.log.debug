@@ -1,0 +1,11 @@
+[DEBUG] Adding build/modbat-test.jar to classpath.
+[DEBUG] modbat.test.SubModel-1: Registered state transition from init to err
+[DEBUG] Before: init
+[DEBUG] --- Exploring model ---
+[DEBUG] modbat.test.SubModel-1: Current state: init
+[DEBUG] modbat.test.SubModel-1: Possible successor: err
+[DEBUG] State err in model modbat.test.SubModel-1 was visited 0 times.
+[DEBUG] Model modbat.test.SubModel-1 has terminated.
+[DEBUG] modbat.test.SubModel-1: Current state: err
+[DEBUG] No more successors.
+[DEBUG] --- Resetting to initial state ---

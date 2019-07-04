@@ -1,0 +1,8 @@
+[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
+[WARNING] Error found, model trace:
+[WARNING] modbat/test/Choices.scala:10: ok => ok; choices = (n = ...: line 12)
+[WARNING] modbat/test/Choices.scala:10: ok => ok; choices = (n = ...: line 12)
+[WARNING] modbat/test/Choices.scala:10: ok => ok; choices = (n = ...: line 12)
+[WARNING] modbat/test/Choices.scala:10: ok => ok; choices = (n = ...: line 11)
+[WARNING] modbat/test/Choices.scala:10: ok => ok; choices = (n = ...: line 12)
+[WARNING] modbat/test/Choices.scala:17: assert

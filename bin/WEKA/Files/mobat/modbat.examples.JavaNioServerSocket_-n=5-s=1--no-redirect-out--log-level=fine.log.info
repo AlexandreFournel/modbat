@@ -1,0 +1,8 @@
+[INFO] 5 tests executed, 4 ok, 1 failed.
+[INFO] One type of test failure:
+[INFO] 1) java.lang.AssertionError: assertion failed at readFrom
+[INFO]    402b73cd0066eaea
+[INFO] 7 states covered (100 % out of 7),
+[INFO] 15 transitions covered (88 % out of 17).
+[INFO] Precondition 1 always passed at transition modbat/examples/JavaNioServerSocket.scala:92 startClient
+[INFO] Random seed for next test would be: 27fe2d950fc74b21

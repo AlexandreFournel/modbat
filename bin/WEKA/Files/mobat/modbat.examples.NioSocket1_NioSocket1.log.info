@@ -1,0 +1,9 @@
+[INFO] 5 tests executed, 4 ok, 1 failed.
+[INFO] One type of test failure:
+[INFO] 1) java.net.ConnectException: Connection refused at connect:
+[INFO]    49a846e52b813972
+[INFO] 4 states covered (66 % out of 6),
+[INFO] 5 transitions covered (25 % out of 20).
+[INFO] Precondition 1 always passed at transition modbat/examples/NioSocket1.scala connect
+[INFO] Precondition 1 always failed at transition modbat/examples/NioSocket1.scala connect
+[INFO] Random seed for next test would be: 27fe2d950fc74b21
