@@ -31,3 +31,6 @@ done
 find Files/modbat.config.ConfigTest/. -name '*.log.*' -o -name '*.err.*' | xargs cat | sort -u > Files/modbat.config.ConfigTest/line_list
 find Files/config/. -name '*.log.*' -o -name '*.err.*' | xargs cat | sort -u > Files/config/line_list
 find Files/modbat/. -name '*.log.*' -o -name '*.err.*' | xargs cat | sort -u > Files/modbat/line_list
+
+
+tr " " "\n" < Files/modbat.config.ConfigTest/line_list > Files/modbat.config.ConfigTest/word_list
