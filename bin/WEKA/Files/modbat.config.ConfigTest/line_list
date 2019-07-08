@@ -1,28 +1,28 @@
-1:      --[no-]even-prime         
-2:      --[no-]odd-prime          
-3:      --[no-]redirect-out       redirect output to log file
-4:      --[no-]some-flag          
-5:      --abort-probability       
-6:      --classpath               overrides environment variable CLASSPATH if set
-7:      --mode                    
-8:      --small-prime             
-9:  -h, --help                    show this help and exit
-10:  -n, --n-runs                  
-11:  -s, --random-seed             
-12:  -s, --show                    show current configuration
-13:  -v, --version                 show version number and exit
-14:ConfigTest vx.yz
-15:Option                 	Type   	Value           	Range
-16:This is a test
-17:Usage: ConfigTest [--OPTION=value] ... [FILE]
-18:abortProbability       	double	0.0             	0.0..1.0
-19:classpath              	String	.               
-20:evenPrime              	boolean	false           	[3]
-21:for the splash screen
-22:mode                   	String	exec            	{dot, exec}
-23:nRuns                  	int	50              	1..inf
-24:oddPrime               	boolean	false           	[2]
-25:randomSeed             	long	e9232493f22057d 
-26:redirectOut            	boolean	true            
-27:smallPrime             	int	two             	{two, three, five, seven}
-28:someFlag               	boolean	false           	[1]
+      --[no-]even-prime         
+      --[no-]odd-prime          
+      --[no-]redirect-out       redirect output to log file
+      --[no-]some-flag          
+      --abort-probability       
+      --classpath               overrides environment variable CLASSPATH if set
+      --mode                    
+      --small-prime             
+  -h, --help                    show this help and exit
+  -n, --n-runs                  
+  -s, --random-seed             
+  -s, --show                    show current configuration
+  -v, --version                 show version number and exit
+ConfigTest vx.yz
+Option                 	Type   	Value           	Range
+This is a test
+Usage: ConfigTest [--OPTION=value] ... [FILE]
+abortProbability       	double	0.0             	0.0..1.0
+classpath              	String	.               
+evenPrime              	boolean	false           	[3]
+for the splash screen
+mode                   	String	exec            	{dot, exec}
+nRuns                  	int	50              	1..inf
+oddPrime               	boolean	false           	[2]
+randomSeed             	long	e9232493f22057d 
+redirectOut            	boolean	true            
+smallPrime             	int	two             	{two, three, five, seven}
+someFlag               	boolean	false           	[1]

@@ -40,8 +40,8 @@ function create_words_lines_list {
     function textreplace {
         tr "[ \t]+" "\n" < $1line_list > $1word_list
         sed -i "" "/^[ \t]*$/d" $1word_list
-        sed -i '' 's/[\.,{}:();]*$//' $1word_list
-        sed -i '' 's/^[\.,{}:();]*//' $1word_list
+        sed -i '' 's/[\.\",{}:();]*$//' $1word_list
+        sed -i '' 's/^[\.\",{}:();]*//' $1word_list
         sort -u Files/modbat/word_list > $1word2_list
         remove $1 "word2_list" "word_list"
     }
@@ -58,13 +58,23 @@ function create_words_lines_list {
         remove $1 "line2_list" "line_list"
     }
 
+    function emptyLines {
+        sed 's/[\x01-\x1F\x7F]//g' $1word_list > $2word2_list
+       remove $1 "word2_list" "word_list"
+    }
+
     textreplace "Files/modbat.config.ConfigTest/"
     textreplace "Files/modbat/"
     textreplace "Files/config/"
 
-    number_lines "Files/modbat.config.ConfigTest/"
-    number_lines "Files/modbat/"
-    number_lines "Files/config/"
+    #emptyLines "Files/modbat.config.ConfigTest/"
+    #mptyLines "Files/modbat/"
+    #emptyLines "Files/config/"
+
+
+    #number_lines "Files/modbat.config.ConfigTest/"
+    #number_lines "Files/modbat/"
+    #number_lines "Files/config/"
 }
 
 
@@ -73,4 +83,4 @@ function create_words_lines_list {
 
 ###################### Function to uncomment #################
 #create_files
-#create_words_lines_list
+create_words_lines_list

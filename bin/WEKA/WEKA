@@ -24,14 +24,14 @@
    You can do this similarly on a word level.
    (Perhaps: xargs cat | tr ' ' '\n' | sort -u ...)
 
-DONE
-
 5. Histogram analysis: obvious junk/"stop words" to remove?
    This is optional in case there are no absolutely obvious candidates.
 
 6. Map the word list to numbers.
    For example: grep -n ^ word_list # grep for beginning of line, show line no.
    The mapping should be to a consecutive list of integers starting from 0 or 1.
+
+DONE
 
 7. Map each filtered log/out file into a record with test ID, word count
    (Check documentation on WEKA preprocessing.)
