@@ -1,6 +1,6 @@
 import os
 import csv
-
+import re
 def main():
 
     liste_finale=[]
@@ -23,56 +23,34 @@ def main():
     print("longueur =")
     print(longueur)
     iter=0
-    # Recover name of the files and call function to count num of words
-    line="file names" 
+    # Recover name of the files and call function to count num of words 
     i=0
     with open("word_occurences.txt","w") as fd:
-        for word in words_word_list[2:longueur//2]:
+        fd.write("@relation firstTry")
+        fd.write("\n")
+        fd.write("\n")
+        fd.write("@attribute fileNames")
+        fd.write("\n")
+        for word in words_word_list[2:]:
             if (i>=2):
-                line+="|"+word
+                word_without_coma=word.replace(',', '_')
+                word_without_returned_line=word_without_coma.replace('\n', '')
+                fd.write("@attribute "+word_without_returned_line+" numeric")
+                fd.write("\n")
             i+=1
-        line=line.replace('\n', '')
-        fd.write(line)
         iter=0
+        fd.write("\n")
+        fd.write("@data")
+        fd.write("\n")
         for file in listOfFiles:
             line=""
             fd.write(line.replace('\n', ''))
             iter+=1
-            print("compteur = ")
-            print(iter)
-            print("")
-            fd.write("\n\n")
             if (file != dirName+"word_list" and file != dirName+"line_list"):
                 line=file
                 for word in words_word_list[2:]:
-                    if word=="failed":
-                        print("NOOOOW")
-                    line=line+"|"+str(open(file, 'r').read().count(word))
+                    count_word=sum(1 for _ in re.finditer(r'\b%s\b' % re.escape(word), open(file, 'r').read()))    
+                    line=line+","+str(count_word)
                 fd.write(line.replace('\n', ''))
-        fd.write("\n\n")
-    
-        for word in words_word_list[longueur//2:]:
-            if (i>=2):
-                line+="|"+word
-            i+=1
-        line=line.replace('\n', '')
-        fd.write(line)
-        iter=0
-        for file in listOfFiles:
-            line=""
-            fd.write(line.replace('\n', ''))
-            iter+=1
-            print("compteur = ")
-            print(iter)
-            print("")
-            fd.write("\n\n")
-            if (file != dirName+"word_list" and file != dirName+"line_list"):
-                line=file
-                for word in words_word_list[2:]:
-                    if word=="failed":
-                        print("NOOOOW")
-                    line=line+"|"+str(open(file, 'r').read().count(word))
-                fd.write(line.replace('\n', ''))
-        fd.write("\n\n")
-        
+                fd.write("\n")
 main()
