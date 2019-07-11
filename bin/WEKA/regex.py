@@ -1,3 +1,7 @@
+## this function remove useless words in folder/word_list
+#For the moment, we are only working on the "modbat" folder. We generate a file (called word_list3. This file is used by generate_doc_arff)
+#be careful, I don't really know why, but in word_liost3, RangeESC appears. The filtering to remove escape sequences don't work at all. So you have to remove by yourself the RangeESC from word_list3
+
 import re
 import os
 import csv

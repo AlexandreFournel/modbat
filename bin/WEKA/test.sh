@@ -67,14 +67,7 @@ function create_words_lines_list {
     textreplace "Files/modbat/"
     textreplace "Files/config/"
 
-    #emptyLines "Files/modbat.config.ConfigTest/"
-    #mptyLines "Files/modbat/"
-    #emptyLines "Files/config/"
 
-
-    #number_lines "Files/modbat.config.ConfigTest/"
-    #number_lines "Files/modbat/"
-    #number_lines "Files/config/"
 }
 
 
@@ -82,5 +75,14 @@ function create_words_lines_list {
 
 
 ###################### Function to uncomment #################
-#create_files
-create_words_lines_list
+# Create_files create all files, with as suffix : error, fine, info, etc. 
+
+#create_files 
+
+
+
+
+
+# Create_words_lines_list create the whole of words present in one of the doc
+
+#create_words_lines_list

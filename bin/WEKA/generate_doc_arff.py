@@ -7,6 +7,7 @@ def main():
     dirName = 'Files/modbat/'
     word_list=open("word_list3",'r')
     words_word_list  = word_list.readlines()
+    used_word_list=words_word_list[3:]
 
     # Get the list of all files in directory tree at given path
     listOfFiles = list()
@@ -20,24 +21,16 @@ def main():
 
 
     longueur=len(listOfFiles)
-    print("longueur =")
-    print(longueur)
-    iter=0
-    # Recover name of the files and call function to count num of words 
-    i=0
-    with open("word_occurences.txt","w") as fd:
+    with open("word_occurences.arff","w") as fd:
         fd.write("@relation firstTry")
         fd.write("\n")
         fd.write("\n")
-        fd.write("@attribute fileNames")
+        fd.write("@attribute fileNames string")
         fd.write("\n")
-        for word in words_word_list[2:]:
-            if (i>=2):
-                word_without_coma=word.replace(',', '_')
-                word_without_returned_line=word_without_coma.replace('\n', '')
-                fd.write("@attribute "+word_without_returned_line+" numeric")
-                fd.write("\n")
-            i+=1
+        for word in used_word_list:
+            word_without_coma=word.replace(',', '_')
+            word_without_returned_line=word_without_coma.replace('\n', '')
+            fd.write("@attribute "+word_without_returned_line+" numeric\n")
         iter=0
         fd.write("\n")
         fd.write("@data")
@@ -46,11 +39,12 @@ def main():
             line=""
             fd.write(line.replace('\n', ''))
             iter+=1
+            print(str(iter)+"/"+str(longueur))
             if (file != dirName+"word_list" and file != dirName+"line_list"):
-                line=file
-                for word in words_word_list[2:]:
-                    count_word=sum(1 for _ in re.finditer(r'\b%s\b' % re.escape(word), open(file, 'r').read()))    
-                    line=line+","+str(count_word)
-                fd.write(line.replace('\n', ''))
-                fd.write("\n")
+                line="\'"+file+"\'"
+                for word in used_word_list:
+                    word_w=word.replace("\n","")
+                    count_word=sum(1 for _ in re.finditer(r'\b%s\b' %re.escape(word_w), open(file, 'r').read()))
+                    line=line+","+word_w+":"+str(count_word)
+                fd.write(line.replace('\n', '')+"\n")
 main()
