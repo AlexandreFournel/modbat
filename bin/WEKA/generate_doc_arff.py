@@ -42,9 +42,14 @@ def main():
             print(str(iter)+"/"+str(longueur))
             if (file != dirName+"word_list" and file != dirName+"line_list"):
                 line="\'"+file+"\'"
+# Commented lines enable to see if the program do the right thing
+#                print(file)
                 for word in used_word_list:
                     word_w=word.replace("\n","")
                     count_word=sum(1 for _ in re.finditer(r'\b%s\b' %re.escape(word_w), open(file, 'r').read()))
-                    line=line+","+word_w+":"+str(count_word)
+#                    if count_word>0:
+#                        print("\n"+word_w+":"+str(count_word))
+                    line=line+","+str(count_word)
+#                print("\n")
                 fd.write(line.replace('\n', '')+"\n")
 main()
