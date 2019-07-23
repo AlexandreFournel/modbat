@@ -1,0 +1,47 @@
+Files/modbat.config.ConfigTest/_.-s.log.raw__This is a test
+Files/modbat.config.ConfigTest/_.-s.log.raw__for the splash screen
+Files/modbat.config.ConfigTest/_.-s.log.raw__Option Type Value Range
+Files/modbat.config.ConfigTest/_.-s.log.raw__redirectOut boolean true 
+Files/modbat.config.ConfigTest/_.-s.log.raw__classpath String . 
+Files/modbat.config.ConfigTest/_.-s.log.raw__randomSeed long e9232493f22057d 
+Files/modbat.config.ConfigTest/_.-s.log.raw__smallPrime int two {two,
+Files/modbat.config.ConfigTest/_.-s.log.raw__int two {two, three,
+Files/modbat.config.ConfigTest/_.-s.log.raw__two {two, three, five,
+Files/modbat.config.ConfigTest/_.-s.log.raw__{two, three, five, seven}
+Files/modbat.config.ConfigTest/_.-s.log.raw__abortProbability double 0.0 0.0..1.0
+Files/modbat.config.ConfigTest/_.-s.log.raw__nRuns int 50 1..inf
+Files/modbat.config.ConfigTest/_.-s.log.raw__mode String exec {dot,
+Files/modbat.config.ConfigTest/_.-s.log.raw__String exec {dot, exec}
+Files/modbat.config.ConfigTest/_.-s.log.raw__someFlag boolean false [1]
+Files/modbat.config.ConfigTest/_.-s.log.raw__oddPrime boolean false [2]
+Files/modbat.config.ConfigTest/_.-s.log.raw__evenPrime boolean false [3]
+Files/modbat.config.ConfigTest/_.-h.log.raw__This is a test
+Files/modbat.config.ConfigTest/_.-h.log.raw__for the splash screen
+Files/modbat.config.ConfigTest/_.-h.log.raw__ConfigTest vx.yz  
+Files/modbat.config.ConfigTest/_.-h.log.raw__Usage: ConfigTest [--OPTION=value] ...
+Files/modbat.config.ConfigTest/_.-h.log.raw__ConfigTest [--OPTION=value] ... [FILE]
+Files/modbat.config.ConfigTest/_.-h.log.raw__-h, --help show this
+Files/modbat.config.ConfigTest/_.-h.log.raw__--help show this help
+Files/modbat.config.ConfigTest/_.-h.log.raw__show this help and
+Files/modbat.config.ConfigTest/_.-h.log.raw__this help and exit
+Files/modbat.config.ConfigTest/_.-h.log.raw__-s, --show show current
+Files/modbat.config.ConfigTest/_.-h.log.raw__--show show current configuration
+Files/modbat.config.ConfigTest/_.-h.log.raw__-v, --version show version
+Files/modbat.config.ConfigTest/_.-h.log.raw__--version show version number
+Files/modbat.config.ConfigTest/_.-h.log.raw__show version number and
+Files/modbat.config.ConfigTest/_.-h.log.raw__version number and exit
+Files/modbat.config.ConfigTest/_.-h.log.raw__--[no-]redirect-out redirect output to
+Files/modbat.config.ConfigTest/_.-h.log.raw__redirect output to log
+Files/modbat.config.ConfigTest/_.-h.log.raw__output to log file
+Files/modbat.config.ConfigTest/_.-h.log.raw__--classpath overrides environment variable
+Files/modbat.config.ConfigTest/_.-h.log.raw__overrides environment variable CLASSPATH
+Files/modbat.config.ConfigTest/_.-h.log.raw__environment variable CLASSPATH if
+Files/modbat.config.ConfigTest/_.-h.log.raw__variable CLASSPATH if set
+Files/modbat.config.ConfigTest/_.-h.log.raw__-s, --random-seed  
+Files/modbat.config.ConfigTest/_.-h.log.raw__--small-prime   
+Files/modbat.config.ConfigTest/_.-h.log.raw__--abort-probability   
+Files/modbat.config.ConfigTest/_.-h.log.raw__-n, --n-runs  
+Files/modbat.config.ConfigTest/_.-h.log.raw__--mode   
+Files/modbat.config.ConfigTest/_.-h.log.raw__--[no-]some-flag   
+Files/modbat.config.ConfigTest/_.-h.log.raw__--[no-]odd-prime   
+Files/modbat.config.ConfigTest/_.-h.log.raw__--[no-]even-prime   

@@ -1,0 +1,177 @@
+ConfigMgr vx.yz  
+Value 1.5 for option
+1.5 for option abortProbability
+for option abortProbability must
+option abortProbability must be
+abortProbability must be at
+must be at most
+be at most 1.0.
+Option -n-runs=2 not supported.
+-n-runs=2 not supported. Try
+not supported. Try ConfigMgr
+supported. Try ConfigMgr --help.
+Arguments are not allowed
+are not allowed for
+not allowed for setting
+allowed for setting boolean
+for setting boolean option
+setting boolean option redirectOut
+boolean option redirectOut to
+option redirectOut to false.
+Option -g=x not supported.
+-g=x not supported. Try
+Option Type Value Range
+redirectOut boolean false 
+classpath String . 
+randomSeed long e9232493f22057d 
+smallPrime int two {two,
+int two {two, three,
+two {two, three, five,
+{two, three, five, seven}
+abortProbability double 0.0 0.0..1.0
+nRuns int 50 1..inf
+mode String exec {dot,
+String exec {dot, exec}
+someFlag boolean false [1]
+oddPrime boolean false [2]
+evenPrime boolean false [3]
+Option --baz-Quux not supported.
+--baz-Quux not supported. Try
+redirectOut boolean true 
+a b c 
+Option --Quux not supported.
+--Quux not supported. Try
+Option --modelClass not supported.
+--modelClass not supported. Try
+Option -f not supported.
+-f not supported. Try
+Illegal value ffffffff for
+value ffffffff for integer
+ffffffff for integer n.
+Usage of evenPrime requires
+of evenPrime requires smallPrime
+evenPrime requires smallPrime (currently
+requires smallPrime (currently three)
+smallPrime (currently three) to
+(currently three) to be
+three) to be set
+to be set to
+be set to two.
+--help a b c
+Option -x not supported.
+-x not supported. Try
+Illegal value xx for
+value xx for boolean
+xx for boolean option
+for boolean option redirectOut.
+Value 0 for option
+0 for option nRuns
+for option nRuns must
+option nRuns must be
+nRuns must be at
+must be at least
+be at least 1.
+classpath String foo 
+cp_1   
+Illegal value 10c1be9b302682f30 for
+value 10c1be9b302682f30 for long
+10c1be9b302682f30 for long s.
+Usage of someFlag requires
+of someFlag requires redirectOut
+someFlag requires redirectOut (currently
+requires redirectOut (currently false)
+redirectOut (currently false) to
+(currently false) to be
+false) to be set
+be set to true.
+Illegal value a for
+value a for integer
+a for integer nRuns.
+Argument --no-mode not allowed
+--no-mode not allowed for
+not allowed for non-boolean
+allowed for non-boolean option.
+nRuns int 2 1..inf
+Option nRuns requires a
+nRuns requires a value.
+nRuns int 999999 1..inf
+Option -classp=baz not supported.
+-classp=baz not supported. Try
+randomSeed long ffffffffffffffff 
+Value -0.5 for option
+-0.5 for option abortProbability
+be at least 0.0.
+Option -f=x not supported.
+-f=x not supported. Try
+Illegal value 999999999999 for
+value 999999999999 for integer
+999999999999 for integer nRuns.
+randomSeed long 10c1be9b302682f3 
+abortProbability double 0.5 0.0..1.0
+Invalid option for small-prime:
+option for small-prime: Must
+for small-prime: Must be
+small-prime: Must be one
+Must be one of
+be one of {two,
+one of {two, three,
+of {two, three, five,
+{two, three, five, seven}.
+Usage: ConfigMgr [--OPTION=value] ...
+ConfigMgr [--OPTION=value] ... [FILE]
+-h, --help show this
+--help show this help
+show this help and
+this help and exit
+-s, --show show current
+--show show current configuration
+-v, --version show version
+--version show version number
+show version number and
+version number and exit
+--[no-]redirect-out redirect output to
+redirect output to log
+output to log file
+--classpath overrides environment variable
+overrides environment variable CLASSPATH
+environment variable CLASSPATH if
+variable CLASSPATH if set
+-s, --random-seed  
+--small-prime   
+--abort-probability   
+-n, --n-runs  
+--mode   
+--[no-]some-flag   
+--[no-]odd-prime   
+--[no-]even-prime   
+Option string for environment
+string for environment variable
+for environment variable CLASSPATH
+environment variable CLASSPATH must
+variable CLASSPATH must be
+CLASSPATH must be non-empty.
+Invalid option for mode:
+option for mode: Must
+for mode: Must be
+mode: Must be one
+be one of {dot,
+one of {dot, exec}.
+nRuns int 1 1..inf
+smallPrime int three {two,
+int three {two, three,
+three {two, three, five,
+Option --x not supported.
+--x not supported. Try
+Option -f= not supported.
+-f= not supported. Try
+classpath String bar 
+Usage of oddPrime requires
+of oddPrime requires smallPrime
+oddPrime requires smallPrime to
+requires smallPrime to be
+smallPrime to be set
+be set to value
+set to value other
+to value other than
+value other than two.
+-h a b c

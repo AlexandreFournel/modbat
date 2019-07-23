@@ -1,7 +1,0 @@
-[INFO] 10 tests executed, 1 ok, 9 failed.
-[INFO] One type of test failure:
-[INFO] 1) java.lang.AssertionError: assertion failed: i = 0 at check
-[INFO]    3ba471c1785a0175 402b73cd0066eaea 41530f4040856586 89a82931be29e65 49a846e52b813972 27fe2d950fc74b21 19b6aa1b14a29017 5ff50ec9279365d2 85780661bf76533
-[INFO] 4 states covered (100 % out of 4),
-[INFO] 6 transitions covered (85 % out of 7).
-[INFO] Random seed for next test would be: a410ce32fc39dfb

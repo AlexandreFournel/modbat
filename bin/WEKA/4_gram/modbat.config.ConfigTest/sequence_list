@@ -1,0 +1,45 @@
+This is a test
+for the splash screen
+Option Type Value Range
+redirectOut boolean true 
+classpath String . 
+randomSeed long e9232493f22057d 
+smallPrime int two {two,
+int two {two, three,
+two {two, three, five,
+{two, three, five, seven}
+abortProbability double 0.0 0.0..1.0
+nRuns int 50 1..inf
+mode String exec {dot,
+String exec {dot, exec}
+someFlag boolean false [1]
+oddPrime boolean false [2]
+evenPrime boolean false [3]
+ConfigTest vx.yz  
+Usage: ConfigTest [--OPTION=value] ...
+ConfigTest [--OPTION=value] ... [FILE]
+-h, --help show this
+--help show this help
+show this help and
+this help and exit
+-s, --show show current
+--show show current configuration
+-v, --version show version
+--version show version number
+show version number and
+version number and exit
+--[no-]redirect-out redirect output to
+redirect output to log
+output to log file
+--classpath overrides environment variable
+overrides environment variable CLASSPATH
+environment variable CLASSPATH if
+variable CLASSPATH if set
+-s, --random-seed  
+--small-prime   
+--abort-probability   
+-n, --n-runs  
+--mode   
+--[no-]some-flag   
+--[no-]odd-prime   
+--[no-]even-prime   

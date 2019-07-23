@@ -1,0 +1,68 @@
+@relation 3_gram
+
+@attribute fileNames string
+@attribute This__is__a numeric
+@attribute is__a__test numeric
+@attribute for__the__splash numeric
+@attribute the__splash__screen numeric
+@attribute Option__Type__Value numeric
+@attribute Type__Value__Range numeric
+@attribute redirectOut__boolean__true numeric
+@attribute classpath__String__. numeric
+@attribute randomSeed__long__e9232493f22057d numeric
+@attribute smallPrime__int__two numeric
+@attribute int__two__{two_ numeric
+@attribute two__{two___three_ numeric
+@attribute {two___three___five_ numeric
+@attribute three___five___seven} numeric
+@attribute abortProbability__double__0.0 numeric
+@attribute double__0.0__0.0..1.0 numeric
+@attribute nRuns__int__50 numeric
+@attribute int__50__1..inf numeric
+@attribute mode__String__exec numeric
+@attribute String__exec__{dot_ numeric
+@attribute exec__{dot___exec} numeric
+@attribute someFlag__boolean__false numeric
+@attribute boolean__false__[1] numeric
+@attribute oddPrime__boolean__false numeric
+@attribute boolean__false__[2] numeric
+@attribute evenPrime__boolean__false numeric
+@attribute boolean__false__[3] numeric
+@attribute ConfigTest__vx.yz__ numeric
+@attribute Usage:__ConfigTest__[--OPTION=value] numeric
+@attribute ConfigTest__[--OPTION=value]__... numeric
+@attribute [--OPTION=value]__...__[FILE] numeric
+@attribute -h___--help__show numeric
+@attribute --help__show__this numeric
+@attribute show__this__help numeric
+@attribute this__help__and numeric
+@attribute help__and__exit numeric
+@attribute -s___--show__show numeric
+@attribute --show__show__current numeric
+@attribute show__current__configuration numeric
+@attribute -v___--version__show numeric
+@attribute --version__show__version numeric
+@attribute show__version__number numeric
+@attribute version__number__and numeric
+@attribute number__and__exit numeric
+@attribute --[no-]redirect-out__redirect__output numeric
+@attribute redirect__output__to numeric
+@attribute output__to__log numeric
+@attribute to__log__file numeric
+@attribute --classpath__overrides__environment numeric
+@attribute overrides__environment__variable numeric
+@attribute environment__variable__CLASSPATH numeric
+@attribute variable__CLASSPATH__if numeric
+@attribute CLASSPATH__if__set numeric
+@attribute -s___--random-seed__ numeric
+@attribute --small-prime____ numeric
+@attribute --abort-probability____ numeric
+@attribute -n___--n-runs__ numeric
+@attribute --mode____ numeric
+@attribute --[no-]some-flag____ numeric
+@attribute --[no-]odd-prime____ numeric
+@attribute --[no-]even-prime____ numeric
+
+@data
+'Files/modbat.config.ConfigTest/_.-s.log.raw',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+'Files/modbat.config.ConfigTest/_.-h.log.raw',1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
