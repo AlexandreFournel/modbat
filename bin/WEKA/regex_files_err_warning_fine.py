@@ -5,12 +5,10 @@ import re
 import os
 import csv
 
-dirName = 'Files/'
-
 def isLineEmpty(line):
     return len(line.strip()) == 0
 
-def giveListOfFiles(subDirName):
+def giveListOfFiles(subDirName, dirName):
     listOfFiles = list()
     for (dirpath, dirnames, filenames) in os.walk(dirName+subDirName):
         listOfFiles += [os.path.join(dirpath, file) for file in filenames]
@@ -29,6 +27,7 @@ def regex(listOfFiles):
         for line in readFile:
             newline=line
             newline=re.sub('^[ \t]*[0-9]*[ \t]*[0-9]+[a-f]+.*$', '', newline)
+            newline=re.sub('^[ \t]*[0-9]*[ \t]*[0-9][0-9]+.*$', '', newline)
             newline=re.sub('^[ \t]*[0-9]*[ \t]*[a-f]+[0-9]+.*$', '', newline)
             if isLineEmpty(newline)==False:
                 writeFile.write(newline)
@@ -39,12 +38,9 @@ def copy_remove(file):
     os.rename(file+"copy",file)
     return
 
-def subMain(subDirNameList):
+def main(subDirNameList, dirName):
     for subDirName in subDirNameList:
-        listOfFiles=giveListOfFiles(subDirName)
+        listOfFiles=giveListOfFiles(subDirName, dirName)
         regex(listOfFiles)
         removeEmptyFiles(listOfFiles)
     return
-
-def main(subDirName):
-    subMain(subDirName)

@@ -21,53 +21,28 @@ def generate_sequenceList(n_grams, dirName,dirName_files):
                 for j in range(len(tabular)):
                     line=tabular[j]
                     length_line=len(line)
-
                     #We want to know what is the n in the _ngrams_
                     n=int(n_grams[0],10)
 
-                    if n==1:
-                        for k in range(length_line):
-                            fh.write(file+"__"+line[k]+"\n")
-                            fd.write(line[k]+"\n")
-                    elif n==2:
-                        if length_line>1:
-                            for k in range(length_line-1):
-                                fh.write(file+"__"+line[k]+" "+line[k+1]+"\n")
-                                fd.write(line[k]+" "+line[k+1]+"\n")
-                        elif length_line==1:
-                            fh.write(file+"__"+line[0]+" "+""+"\n")
-                            fd.write(line[0]+" "+""+"\n")
+                    if length_line>=n:
+                        for k in range(length_line-(n-1)):
 
-                    elif n==3:
-                        if length_line>2:
-                            for k in range(length_line-2):
-                                fh.write(file+"__"+line[k]+" "+line[k+1]+" "+line[k+2]+"\n")
-                                fd.write(line[k]+" "+line[k+1]+" "+line[k+2]+"\n")
-                        elif length_line==2:
-                            for k in range(length_line-1):
-                                fh.write(file+"__"+line[k]+" "+line[k+1]+" "+""+"\n")
-                                fd.write(line[k]+" "+line[k+1]+" "+""+"\n")
-                        elif length_line==1:
-                            fh.write(file+"__"+line[0]+" "+""+" "+""+"\n")
-                            fd.write(line[0]+" "+""+" "+""+"\n")
+                            sequenceOfWords=str(line[k])
+                            for i in range(1,n):
+                                sequenceOfWords=sequenceOfWords+" "+str(line[k+i])
+                            
+                            fh.write(file+"__"+sequenceOfWords+"\n")
+                            fd.write(sequenceOfWords+"\n")
 
-                    elif n==4:
-                        if length_line>3:
-                            for k in range(length_line-3):
-                                fh.write(file+"__"+line[k]+" "+line[k+1]+" "+line[k+2]+" "+line[k+3]+"\n")
-                                fd.write(line[k]+" "+line[k+1]+" "+line[k+2]+" "+line[k+3]+"\n")
-
-                        elif length_line==3:
-                            for k in range(length_line-2):
-                                fh.write(file+"__"+line[k]+" "+line[k+1]+" "+line[k+2]+" "+""+"\n")
-                                fd.write(line[k]+" "+line[k+1]+" "+line[k+2]+" "+""+"\n")
-                        elif length_line==2:
-                            for k in range(length_line-1):
-                                fh.write(file+"__"+line[k]+" "+line[k+1]+" "+""+" "+""+"\n")
-                                fd.write(line[k]+" "+line[k+1]+" "+""+" "+""+"\n")
-                        elif length_line==1:
-                            fh.write(file+"__"+line[0]+" "+""+" "+""+" "+""+"\n")
-                            fd.write(line[0]+" "+""+" "+""+" "+""+"\n")
+                    elif length_line!=0:
+                        sequenceOfWords=str(line[0])
+                        for i in range(1,n):
+                            if i>=length_line:
+                                sequenceOfWords=sequenceOfWords+" "+""
+                            else:
+                                sequenceOfWords=sequenceOfWords+" "+str(line[i])
+                        fh.write(file+"__"+sequenceOfWords+"\n")
+                        fd.write(sequenceOfWords+"\n")
     return
 
 def remove_duplicate_lines(ngram,dirName):

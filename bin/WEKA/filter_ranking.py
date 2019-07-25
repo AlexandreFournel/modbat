@@ -3,196 +3,63 @@ import os
 from threading import Thread
 import sys
 
-def filter(file1,file2):
-    percentage_per_type={}
+def filters(file1,file2, ngram, directory):
+    extension=["debug", "info", "error", "warning", "fine", "raw"]
+    res=[0,0,0,0,0,0]
 
-    for line in open("2_gram/modbat/Ranking", "r"):
-        if (file1 in line) and (file2 in line) :
-            value=float (int( re.sub(r"^([0-9]+)\.[0-9]+$", "\\1", line.split("__")[0][:-1].replace(".","")),10)/10)
-            extension=line.split("__")[1].rsplit('.',1)[1]
-            if extension in percentage_per_type:
-                print("ERROR in filter_ranking")
-            percentage_per_type[extension]=value
-    total=0
-    if  bool(percentage_per_type):
-        if "debug" not in percentage_per_type:
-            if os.path.isfile(file1+".debug") and  os.path.isfile(file2+".debug"):
-                total+=100
+    for i in range(0, len(extension)):
+        if os.path.isfile(file1+"."+extension[i]) and os.path.isfile(file2+"."+extension[i]):
+            for line in open(ngram+directory+"Ranking", "r"):
+                if file1 in line and file2 in line:
+                    res[i]=int( re.sub(r"^([0-9]+)\.[0-9]+$", "\\1", line.split("__")[0][:-1].replace(".","")),10)/10
+        elif os.path.isfile(file1+"."+extension[i])==False and os.path.isfile(file2+"."+extension[i])==False:
+            res[i]=-2
         else:
-            total+=percentage_per_type.get("debug")
-        if "info" not in percentage_per_type:
-            if os.path.isfile(file1+".info") and  os.path.isfile(file2+".info"):
-                total+=100
-        else:
-            total+=percentage_per_type.get("info")
+            res[i]=-1
+    return (res)
 
-        if "fine" not in percentage_per_type:
-            if os.path.isfile(file1+".fine") and  os.path.isfile(file2+".fine"):
-                total+=100
-        else:
-            total+=percentage_per_type.get("fine")
-
-        if "error" not in percentage_per_type:
-            if os.path.isfile(file1+".error") and  os.path.isfile(file2+".error"):
-                total+=100
-        else:
-            total+=percentage_per_type.get("error")
-
-        if "warning" not in percentage_per_type:
-            if os.path.isfile(file1+".warning") and  os.path.isfile(file2+".warning"):
-                total+=100
-        else:
-            total+=percentage_per_type.get("warning")
-
-        if "raw" not in percentage_per_type:
-            if os.path.isfile(file1+".raw") and  os.path.isfile(file2+".raw"):
-                total+=100
-        else:
-            total+=percentage_per_type.get("raw")
-    return(int(total/6*10)/10)
-
-def filters(file1,file2):
-    print("\n")
-    print(file1)
-    print(file2)
-    print("\n")
-    ##debug
-    debug="error"
-    if os.path.isfile(file1+".debug") and os.path.isfile(file2+".debug"):
-        for line in open("2_gram/modbat/Ranking", "r"):
-            if file1 in line and file2 in line:
-                debug=float (int( re.sub(r"^([0-9]+)\.[0-9]+$", "\\1", line.split("__")[0][:-1].replace(".","")),10)/10)
-    elif os.path.isfile(file1+".debug")==False and os.path.isfile(file2+".debug")==False:
-        debug=100
-    else:
-        debug=0
-    if debug=="error":
-        debug=0
-
-    ##info
-    info="error"
-    if os.path.isfile(file1+".info") and os.path.isfile(file2+".info"):
-        for line in open("2_gram/modbat/Ranking", "r"):
-            if file1 in line and file2 in line:
-                info=float (int( re.sub(r"^([0-9]+)\.[0-9]+$", "\\1", line.split("__")[0][:-1].replace(".","")),10)/10)
-    elif os.path.isfile(file1+".info")==False and os.path.isfile(file2+".info")==False:
-        info=100
-    else:
-        info=0
-    if info=="error":
-        info=0
-
-    error="error"
-    if os.path.isfile(file1+".error") and os.path.isfile(file2+".error"):
-        for line in open("2_gram/modbat/Ranking", "r"):
-            if file1 in line and file2 in line:
-                error=float (int( re.sub(r"^([0-9]+)\.[0-9]+$", "\\1", line.split("__")[0][:-1].replace(".","")),10)/10)
-    elif os.path.isfile(file1+".error")==False and os.path.isfile(file2+".error")==False:
-        error=100
-    else:
-        error=0
-    if error=="error":
-        error=0
-
-    warning="error"
-    if os.path.isfile(file1+".warning") and os.path.isfile(file2+".warning"):
-        for line in open("2_gram/modbat/Ranking", "r"):
-            if file1 in line and file2 in line:
-                warning=float (int( re.sub(r"^([0-9]+)\.[0-9]+$", "\\1", line.split("__")[0][:-1].replace(".","")),10)/10)
-    elif os.path.isfile(file1+".warning")==False and os.path.isfile(file2+".warning")==False:
-        warning=100
-    else:
-        warning=0
-    if warning=="error":
-        warning=0
-
-    fine="error"
-    if os.path.isfile(file1+".fine") and os.path.isfile(file2+".fine"):
-        for line in open("2_gram/modbat/Ranking", "r"):
-            if file1 in line and file2 in line:
-                fine=float (int( re.sub(r"^([0-9]+)\.[0-9]+$", "\\1", line.split("__")[0][:-1].replace(".","")),10)/10)
-    elif os.path.isfile(file1+".fine")==False and os.path.isfile(file2+".fine")==False:
-        fine=100
-    else:
-        fine=0
-    if fine=="error":
-        fine=0
-
-    raw="error"
-    if os.path.isfile(file1+".raw") and os.path.isfile(file2+".raw"):
-        for line in open("2_gram/modbat/Ranking", "r"):
-            if file1 in line and file2 in line:
-                raw=float (int( re.sub(r"^([0-9]+)\.[0-9]+$", "\\1", line.split("__")[0][:-1].replace(".","")),10)/10)
-    elif os.path.isfile(file1+".raw")==False and os.path.isfile(file2+".raw")==False:
-        raw=100
-    else:
-        raw=0
-    if raw=="error":
-        raw=0
-
-    total=debug+info+ fine+ error+ warning+ raw
-    total=total//6
-    return (total)
-
-def find_good_sublist(file,liste):
-    for sublist in liste:
-        if sublist[0]==file.rsplit('.')[0]:
-            sublist=sublist.append(file.rsplit('.')[1])
-    return (liste)
-
-def filtering(n_grams, dirName, dirName_files, thread, percentage):
+def filtering(ngram, dirName, dirName_files, thread, percentage):
     listOfFiles = list()
-    for (dirpath, dirnames, filenames) in os.walk("Files/"+"modbat/"):
+    for (dirpath, dirnames, filenames) in os.walk(dirName_files):
         listOfFiles += [os.path.join(dirpath, file) for file in filenames]
     for i in range(len(listOfFiles)):
         listOfFiles[i]=listOfFiles[i].rsplit(".",1)[0]
     list(set(listOfFiles)) 
     length=len(listOfFiles)
-
+    
     if thread==1:
-        for i in range(length//4):
-            for j in range(i+1,length):
-                res=filters(listOfFiles[i],listOfFiles[j])
-                if res>=percentage:
-                    print(listOfFiles[i])
-                    print(listOfFiles[j])
-                    print("\n")
+        lowLimit=0
+        highLimit=length//4
     elif thread==2:
-        for i in range(length//4,2*length//4):
-            for j in range(i+1,length):
-                res=filters(listOfFiles[i],listOfFiles[j])
-                if res>=percentage:
-                    print(listOfFiles[i])
-                    print(listOfFiles[j])
-                    print("\n")
+        lowLimit=length//4
+        highLimit=2*length//4
     elif thread==3:
-        for i in range(2*length//4,3*length//4):
-            for j in range(i+1,length):
-                res=filters(listOfFiles[i],listOfFiles[j])
-                if res>=percentage:
-                    print(listOfFiles[i])
-                    print(listOfFiles[j])
-                    print("\n")
+        lowLimit=2*length//4
+        highLimit=3*length//4
     elif thread==4:
-        iter=3*length//4-1
-        for i in range(3*length//4,):
-            iter+=1
-            value= (iter - 3*length//4) *100 // (length-3*length//4)
-            progressBar(value, 100)
-            for j in range(i+1,length):
-                res=filters(listOfFiles[i],listOfFiles[j])
-                if res>=percentage:
-                    print(listOfFiles[i])
-                    print(listOfFiles[j])
-                    print("\n")
+        lowLimit=3*length//4
+        highLimit=length
 
-def progressBar(value, endvalue, bar_length=20):
-        percent = float(value) / endvalue
-        arrow = '-' * int(round(percent * bar_length)-1) + '>'
-        spaces = ' ' * (bar_length - len(arrow))
-
-        sys.stdout.write("\rPercent: [{0}] {1}%".format(arrow + spaces, int(round(percent * 100))))
-        sys.stdout.flush()
+    for i in range(lowLimit,highLimit):
+        for j in range(i+1,length):
+            res=filters(listOfFiles[i],listOfFiles[j], ngram, dirName)
+            total=sum(res)
+            inter=0
+            for h in res:
+                if h==-1:
+                    inter=-1
+            if inter==0:
+                total=0
+                nb_superior_to_zero=0
+                for k in res:
+                    if k>0:
+                        total+=k
+                        nb_superior_to_zero+=1
+                if nb_superior_to_zero!=0:
+                    if total/nb_superior_to_zero>float(percentage):
+                        print(listOfFiles[i])
+                        print(listOfFiles[j])
+                        print("\n")
 
 class launch_threading(Thread):
     def __init__(self, n_grams,dirName,dirName_files, number,percentage):

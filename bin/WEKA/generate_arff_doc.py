@@ -28,87 +28,35 @@ def count(file, ngram, dirName):
     for j in range(len(liste)):
         line=liste[j]
         length_line=len(line)
-        if n==1:
-            for k in range(length_line):
-                if str(line[k]) in sequence_dict:
-                    count=sequence_dict.get(str(line[k]))
-                    del sequence_dict[str(line[k])]
-                    sequence_dict[str(line[k])]=count+1
-                else:
-                    print("Not FOund")
-        elif n==2:
-            if length_line>1:
-                for k in range(length_line-1):
-                    if str(line[k])+" "+str(line[k+1]) in sequence_dict:
-                        count=sequence_dict.get(str(line[k])+" "+str(line[k+1]))
-                        del sequence_dict[str(line[k])+" "+str(line[k+1])]
-                        sequence_dict[str(line[k])+" "+str(line[k+1])]=count+1
-                    else:
-                        print("Not Found")
-            elif length_line==1:
-                if str(line[0])+" "+"" in sequence_dict:
-                    count=sequence_dict.get(str(line[0])+" "+"")
-                    sequence_dict[str(line[0])+" "+""]=count+1
-                else:
-                    print("Not Found")
-        elif n==3:
-            if length_line>2:
-                for k in range(length_line-2):
-                    if str(line[k])+" "+str(line[k+1])+" "+str(line[k+2]) in sequence_dict:
-                        count=sequence_dict.get(str(line[k])+" "+str(line[k+1])+" "+str(line[k+2]))
-                        del sequence_dict[str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])]
-                        sequence_dict[str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])]=count+1
-                    else:
-                        print("Not Found")
-            elif length_line==2:
-                for k in range(length_line-1):
-                    if str(line[k]+" "+line[k+1]+" "+"") in sequence_dict:
-                        count=sequence_dict.get(str(line[k])+" "+str(line[k+1])+" "+"")
-                        del sequence_dict[str(line[k])+" "+str(line[k+1])+" "+""]
-                        sequence_dict[str(line[k])+" "+str(line[k+1])+" "+""]=count+1
-                    else:
-                        print("Not Found")
-            elif length_line==1:
-                if str(line[0])+" "+""+" "+"" in sequence_dict:
-                    count=sequence_dict.get(str(line[0])+" "+""+" "+"")
-                    del sequence_dict[str(line[0])+" "+""+" "+""]
-                    sequence_dict[str(line[0])+" "+""+" "+""]=count+1
-                else:
-                    print("Not Found")
 
-        elif n==4:
-            if length_line>3:
-                for k in range(length_line-3):
-                    if str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])+" "+str(line[k+3]) in sequence_dict:
-                        count=sequence_dict.get(str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])+" "+str(line[k+3]))
-                        del sequence_dict[str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])+" "+str(line[k+3])]
-                        sequence_dict[str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])+" "+str(line[k+3])]=count+1
-                    else:
-                        print("Not Found")
-
-            elif length_line==3:
-                for k in range(length_line-2):
-                    if str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])+" "+"" in sequence_dict:
-                        count=sequence_dict.get(str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])+" "+"")
-                        del sequence_dict[str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])+" "+""]
-                        sequence_dict[str(line[k])+" "+str(line[k+1])+" "+str(line[k+2])+" "+""]=count+1
-                    else:
-                        print("Not Found")
-            elif length_line==2:
-                for k in range(length_line-1):
-                    if str(line[k])+" "+str(line[k+1])+" "+""+" "+"" in sequence_dict:
-                        count=sequence_dict.get(str(line[k])+" "+str(line[k+1])+" "+""+" "+"")
-                        del sequence_dict[str(line[k])+" "+str(line[k+1])+" "+""+" "+""]
-                        sequence_dict[str(line[k])+" "+str(line[k+1])+" "+""+" "+""]=count+1
-                    else:
-                        print("Not Found")
-            elif length_line==1:
-                if str(line[0])+" "+""+" "+""+" "+"" in sequence_dict:
-                    count=sequence_dict.get(str(line[0])+" "+""+" "+""+" "+"")
-                    del sequence_dict[str(line[0])+" "+""+" "+""+" "+""]
-                    sequence_dict[str(line[0])+" "+""+" "+""+" "+""]=count+1
+        if length_line>=n:
+            for k in range(length_line-(n-1)):
+                
+                sequenceOfWords=str(line[k])
+                for i in range(1,n):
+                    sequenceOfWords=sequenceOfWords+" "+str(line[k+i])
+                
+                if sequenceOfWords in sequence_dict:
+                    count=sequence_dict.get(sequenceOfWords)
+                    del sequence_dict[sequenceOfWords]
+                    sequence_dict[sequenceOfWords]=count+1
                 else:
                     print("Not Found")
+        elif length_line!=0:
+            sequenceOfWords=str(line[0])
+            for i in range(1,n):
+                if i>=length_line:
+                    sequenceOfWords=sequenceOfWords+" "+""
+                else:
+                    sequenceOfWords=sequenceOfWords+" "+str(line[i])
+
+            if sequenceOfWords in sequence_dict:
+                count=sequence_dict.get(sequenceOfWords)
+                del sequence_dict[sequenceOfWords]
+                sequence_dict[sequenceOfWords]=count+1
+            else:
+                print("Not Found")   
+
     return (sequence_dict)
 
 def generate_arff_doc(ngram,dirName,directory,thread):
