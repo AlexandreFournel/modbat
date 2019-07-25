@@ -114,7 +114,6 @@ def remove(file):
     os.remove(file)
     return
 
-
 def main(directory, ngrams, dirName_files):
     for dirName in dirName_files:
         for ngram in ngrams:
