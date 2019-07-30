@@ -109,7 +109,7 @@ In other words, every 2 files are compared. Thanks to the Jaccard Index, we are 
 
 
 ### Print Every 2 Files If They Have More Than x% of Similarities
-It is possible to print a list of 2 files which have more than X percentage of similarities. 
+It is possible to print a 2-files-list which have more than X percentage of similarities. 
 
 This file use a python program which returns a list of 6 value. For 2 different files, for a certain ngram, the elements of this list are equals to the percentage of similarities between :
    - file1.warning and file2.warning
