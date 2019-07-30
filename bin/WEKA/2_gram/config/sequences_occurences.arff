@@ -1,219 +1,219 @@
 @relation 2_gram
 
 @attribute fileNames string
-@attribute ConfigMgr__vx.yz numeric
-@attribute Value__1.5 numeric
-@attribute 1.5__for numeric
-@attribute for__option numeric
-@attribute option__abortProbability numeric
-@attribute abortProbability__must numeric
-@attribute must__be numeric
-@attribute be__at numeric
-@attribute at__most numeric
-@attribute most__1.0. numeric
-@attribute Option__-n-runs=2 numeric
-@attribute -n-runs=2__not numeric
-@attribute not__supported. numeric
-@attribute supported.__Try numeric
-@attribute Try__ConfigMgr numeric
-@attribute ConfigMgr__--help. numeric
-@attribute Arguments__are numeric
-@attribute are__not numeric
-@attribute not__allowed numeric
-@attribute allowed__for numeric
-@attribute for__setting numeric
-@attribute setting__boolean numeric
-@attribute boolean__option numeric
-@attribute option__redirectOut numeric
-@attribute redirectOut__to numeric
-@attribute to__false. numeric
-@attribute Option__-g=x numeric
-@attribute -g=x__not numeric
-@attribute Option__Type numeric
-@attribute Type__Value numeric
-@attribute Value__Range numeric
-@attribute redirectOut__boolean numeric
-@attribute boolean__false numeric
-@attribute classpath__String numeric
-@attribute String__. numeric
-@attribute randomSeed__long numeric
-@attribute long__e9232493f22057d numeric
-@attribute smallPrime__int numeric
-@attribute int__two numeric
-@attribute two__{two_ numeric
-@attribute {two___three_ numeric
-@attribute three___five_ numeric
-@attribute five___seven} numeric
-@attribute abortProbability__double numeric
-@attribute double__0.0 numeric
-@attribute 0.0__0.0..1.0 numeric
-@attribute nRuns__int numeric
-@attribute int__50 numeric
-@attribute 50__1..inf numeric
-@attribute mode__String numeric
-@attribute String__exec numeric
-@attribute exec__{dot_ numeric
-@attribute {dot___exec} numeric
-@attribute someFlag__boolean numeric
-@attribute false__[1] numeric
-@attribute oddPrime__boolean numeric
-@attribute false__[2] numeric
-@attribute evenPrime__boolean numeric
-@attribute false__[3] numeric
-@attribute Option__--baz-Quux numeric
-@attribute --baz-Quux__not numeric
-@attribute boolean__true numeric
-@attribute a__b numeric
-@attribute b__c numeric
-@attribute Option__--Quux numeric
-@attribute --Quux__not numeric
-@attribute Option__--modelClass numeric
-@attribute --modelClass__not numeric
-@attribute Option__-f numeric
-@attribute -f__not numeric
-@attribute Illegal__value numeric
-@attribute value__ffffffff numeric
-@attribute ffffffff__for numeric
-@attribute for__integer numeric
-@attribute integer__n. numeric
-@attribute Usage__of numeric
-@attribute of__evenPrime numeric
-@attribute evenPrime__requires numeric
-@attribute requires__smallPrime numeric
-@attribute smallPrime__(currently numeric
-@attribute (currently__three) numeric
-@attribute three)__to numeric
-@attribute to__be numeric
-@attribute be__set numeric
-@attribute set__to numeric
-@attribute to__two. numeric
-@attribute --help__a numeric
-@attribute Option__-x numeric
-@attribute -x__not numeric
-@attribute value__xx numeric
-@attribute xx__for numeric
-@attribute for__boolean numeric
-@attribute option__redirectOut. numeric
-@attribute Value__0 numeric
-@attribute 0__for numeric
-@attribute option__nRuns numeric
-@attribute nRuns__must numeric
-@attribute at__least numeric
-@attribute least__1. numeric
-@attribute String__foo numeric
-@attribute cp_1__ numeric
-@attribute value__10c1be9b302682f30 numeric
-@attribute 10c1be9b302682f30__for numeric
-@attribute for__long numeric
-@attribute long__s. numeric
-@attribute of__someFlag numeric
-@attribute someFlag__requires numeric
-@attribute requires__redirectOut numeric
-@attribute redirectOut__(currently numeric
-@attribute (currently__false) numeric
-@attribute false)__to numeric
-@attribute to__true. numeric
-@attribute value__a numeric
-@attribute a__for numeric
-@attribute integer__nRuns. numeric
-@attribute Argument__--no-mode numeric
-@attribute --no-mode__not numeric
-@attribute for__non-boolean numeric
-@attribute non-boolean__option. numeric
-@attribute int__2 numeric
-@attribute 2__1..inf numeric
-@attribute Option__nRuns numeric
-@attribute nRuns__requires numeric
-@attribute requires__a numeric
-@attribute a__value. numeric
-@attribute int__999999 numeric
-@attribute 999999__1..inf numeric
-@attribute Option__-classp=baz numeric
-@attribute -classp=baz__not numeric
-@attribute long__ffffffffffffffff numeric
-@attribute Value__-0.5 numeric
-@attribute -0.5__for numeric
-@attribute least__0.0. numeric
-@attribute Option__-f=x numeric
-@attribute -f=x__not numeric
-@attribute value__999999999999 numeric
-@attribute 999999999999__for numeric
-@attribute long__10c1be9b302682f3 numeric
-@attribute double__0.5 numeric
-@attribute 0.5__0.0..1.0 numeric
-@attribute Invalid__option numeric
-@attribute option__for numeric
-@attribute for__small-prime: numeric
-@attribute small-prime:__Must numeric
-@attribute Must__be numeric
-@attribute be__one numeric
-@attribute one__of numeric
-@attribute of__{two_ numeric
-@attribute five___seven}. numeric
-@attribute Usage:__ConfigMgr numeric
-@attribute ConfigMgr__[--OPTION=value] numeric
-@attribute [--OPTION=value]__... numeric
-@attribute ...__[FILE] numeric
-@attribute -h___--help numeric
-@attribute --help__show numeric
-@attribute show__this numeric
-@attribute this__help numeric
-@attribute help__and numeric
-@attribute and__exit numeric
-@attribute -s___--show numeric
-@attribute --show__show numeric
-@attribute show__current numeric
-@attribute current__configuration numeric
-@attribute -v___--version numeric
-@attribute --version__show numeric
-@attribute show__version numeric
-@attribute version__number numeric
-@attribute number__and numeric
-@attribute --[no-]redirect-out__redirect numeric
-@attribute redirect__output numeric
-@attribute output__to numeric
-@attribute to__log numeric
-@attribute log__file numeric
-@attribute --classpath__overrides numeric
-@attribute overrides__environment numeric
-@attribute environment__variable numeric
-@attribute variable__CLASSPATH numeric
-@attribute CLASSPATH__if numeric
-@attribute if__set numeric
-@attribute -s___--random-seed numeric
-@attribute --small-prime__ numeric
-@attribute --abort-probability__ numeric
-@attribute -n___--n-runs numeric
-@attribute --mode__ numeric
-@attribute --[no-]some-flag__ numeric
-@attribute --[no-]odd-prime__ numeric
-@attribute --[no-]even-prime__ numeric
-@attribute Option__string numeric
-@attribute string__for numeric
-@attribute for__environment numeric
-@attribute CLASSPATH__must numeric
-@attribute be__non-empty. numeric
-@attribute for__mode: numeric
-@attribute mode:__Must numeric
-@attribute of__{dot_ numeric
-@attribute {dot___exec}. numeric
-@attribute int__1 numeric
-@attribute 1__1..inf numeric
-@attribute int__three numeric
-@attribute three__{two_ numeric
-@attribute Option__--x numeric
-@attribute --x__not numeric
-@attribute Option__-f= numeric
-@attribute -f=__not numeric
-@attribute String__bar numeric
-@attribute of__oddPrime numeric
-@attribute oddPrime__requires numeric
-@attribute smallPrime__to numeric
-@attribute to__value numeric
-@attribute value__other numeric
-@attribute other__than numeric
-@attribute than__two. numeric
-@attribute -h__a numeric
+@attribute "ConfigMgr vx.yz" numeric
+@attribute "Value 1.5" numeric
+@attribute "1.5 for" numeric
+@attribute "for option" numeric
+@attribute "option abortProbability" numeric
+@attribute "abortProbability must" numeric
+@attribute "must be" numeric
+@attribute "be at" numeric
+@attribute "at most" numeric
+@attribute "most 1.0." numeric
+@attribute "Option -n-runs=2" numeric
+@attribute "-n-runs=2 not" numeric
+@attribute "not supported." numeric
+@attribute "supported. Try" numeric
+@attribute "Try ConfigMgr" numeric
+@attribute "ConfigMgr --help." numeric
+@attribute "Arguments are" numeric
+@attribute "are not" numeric
+@attribute "not allowed" numeric
+@attribute "allowed for" numeric
+@attribute "for setting" numeric
+@attribute "setting boolean" numeric
+@attribute "boolean option" numeric
+@attribute "option redirectOut" numeric
+@attribute "redirectOut to" numeric
+@attribute "to false." numeric
+@attribute "Option -g=x" numeric
+@attribute "-g=x not" numeric
+@attribute "Option Type" numeric
+@attribute "Type Value" numeric
+@attribute "Value Range" numeric
+@attribute "redirectOut boolean" numeric
+@attribute "boolean false" numeric
+@attribute "classpath String" numeric
+@attribute "String ." numeric
+@attribute "randomSeed long" numeric
+@attribute "long e9232493f22057d" numeric
+@attribute "smallPrime int" numeric
+@attribute "int two" numeric
+@attribute "two {two," numeric
+@attribute "{two, three," numeric
+@attribute "three, five," numeric
+@attribute "five, seven}" numeric
+@attribute "abortProbability double" numeric
+@attribute "double 0.0" numeric
+@attribute "0.0 0.0..1.0" numeric
+@attribute "nRuns int" numeric
+@attribute "int 50" numeric
+@attribute "50 1..inf" numeric
+@attribute "mode String" numeric
+@attribute "String exec" numeric
+@attribute "exec {dot," numeric
+@attribute "{dot, exec}" numeric
+@attribute "someFlag boolean" numeric
+@attribute "false [1]" numeric
+@attribute "oddPrime boolean" numeric
+@attribute "false [2]" numeric
+@attribute "evenPrime boolean" numeric
+@attribute "false [3]" numeric
+@attribute "Option --baz-Quux" numeric
+@attribute "--baz-Quux not" numeric
+@attribute "boolean true" numeric
+@attribute "a b" numeric
+@attribute "b c" numeric
+@attribute "Option --Quux" numeric
+@attribute "--Quux not" numeric
+@attribute "Option --modelClass" numeric
+@attribute "--modelClass not" numeric
+@attribute "Option -f" numeric
+@attribute "-f not" numeric
+@attribute "Illegal value" numeric
+@attribute "value ffffffff" numeric
+@attribute "ffffffff for" numeric
+@attribute "for integer" numeric
+@attribute "integer n." numeric
+@attribute "Usage of" numeric
+@attribute "of evenPrime" numeric
+@attribute "evenPrime requires" numeric
+@attribute "requires smallPrime" numeric
+@attribute "smallPrime (currently" numeric
+@attribute "(currently three)" numeric
+@attribute "three) to" numeric
+@attribute "to be" numeric
+@attribute "be set" numeric
+@attribute "set to" numeric
+@attribute "to two." numeric
+@attribute "--help a" numeric
+@attribute "Option -x" numeric
+@attribute "-x not" numeric
+@attribute "value xx" numeric
+@attribute "xx for" numeric
+@attribute "for boolean" numeric
+@attribute "option redirectOut." numeric
+@attribute "Value 0" numeric
+@attribute "0 for" numeric
+@attribute "option nRuns" numeric
+@attribute "nRuns must" numeric
+@attribute "at least" numeric
+@attribute "least 1." numeric
+@attribute "String foo" numeric
+@attribute "cp_1 " numeric
+@attribute "value 10c1be9b302682f30" numeric
+@attribute "10c1be9b302682f30 for" numeric
+@attribute "for long" numeric
+@attribute "long s." numeric
+@attribute "of someFlag" numeric
+@attribute "someFlag requires" numeric
+@attribute "requires redirectOut" numeric
+@attribute "redirectOut (currently" numeric
+@attribute "(currently false)" numeric
+@attribute "false) to" numeric
+@attribute "to true." numeric
+@attribute "value a" numeric
+@attribute "a for" numeric
+@attribute "integer nRuns." numeric
+@attribute "Argument --no-mode" numeric
+@attribute "--no-mode not" numeric
+@attribute "for non-boolean" numeric
+@attribute "non-boolean option." numeric
+@attribute "int 2" numeric
+@attribute "2 1..inf" numeric
+@attribute "Option nRuns" numeric
+@attribute "nRuns requires" numeric
+@attribute "requires a" numeric
+@attribute "a value." numeric
+@attribute "int 999999" numeric
+@attribute "999999 1..inf" numeric
+@attribute "Option -classp=baz" numeric
+@attribute "-classp=baz not" numeric
+@attribute "long ffffffffffffffff" numeric
+@attribute "Value -0.5" numeric
+@attribute "-0.5 for" numeric
+@attribute "least 0.0." numeric
+@attribute "Option -f=x" numeric
+@attribute "-f=x not" numeric
+@attribute "value 999999999999" numeric
+@attribute "999999999999 for" numeric
+@attribute "long 10c1be9b302682f3" numeric
+@attribute "double 0.5" numeric
+@attribute "0.5 0.0..1.0" numeric
+@attribute "Invalid option" numeric
+@attribute "option for" numeric
+@attribute "for small-prime:" numeric
+@attribute "small-prime: Must" numeric
+@attribute "Must be" numeric
+@attribute "be one" numeric
+@attribute "one of" numeric
+@attribute "of {two," numeric
+@attribute "five, seven}." numeric
+@attribute "Usage: ConfigMgr" numeric
+@attribute "ConfigMgr [--OPTION=value]" numeric
+@attribute "[--OPTION=value] ..." numeric
+@attribute "... [FILE]" numeric
+@attribute "-h, --help" numeric
+@attribute "--help show" numeric
+@attribute "show this" numeric
+@attribute "this help" numeric
+@attribute "help and" numeric
+@attribute "and exit" numeric
+@attribute "-s, --show" numeric
+@attribute "--show show" numeric
+@attribute "show current" numeric
+@attribute "current configuration" numeric
+@attribute "-v, --version" numeric
+@attribute "--version show" numeric
+@attribute "show version" numeric
+@attribute "version number" numeric
+@attribute "number and" numeric
+@attribute "--[no-]redirect-out redirect" numeric
+@attribute "redirect output" numeric
+@attribute "output to" numeric
+@attribute "to log" numeric
+@attribute "log file" numeric
+@attribute "--classpath overrides" numeric
+@attribute "overrides environment" numeric
+@attribute "environment variable" numeric
+@attribute "variable CLASSPATH" numeric
+@attribute "CLASSPATH if" numeric
+@attribute "if set" numeric
+@attribute "-s, --random-seed" numeric
+@attribute "--small-prime " numeric
+@attribute "--abort-probability " numeric
+@attribute "-n, --n-runs" numeric
+@attribute "--mode " numeric
+@attribute "--[no-]some-flag " numeric
+@attribute "--[no-]odd-prime " numeric
+@attribute "--[no-]even-prime " numeric
+@attribute "Option string" numeric
+@attribute "string for" numeric
+@attribute "for environment" numeric
+@attribute "CLASSPATH must" numeric
+@attribute "be non-empty." numeric
+@attribute "for mode:" numeric
+@attribute "mode: Must" numeric
+@attribute "of {dot," numeric
+@attribute "{dot, exec}." numeric
+@attribute "int 1" numeric
+@attribute "1 1..inf" numeric
+@attribute "int three" numeric
+@attribute "three {two," numeric
+@attribute "Option --x" numeric
+@attribute "--x not" numeric
+@attribute "Option -f=" numeric
+@attribute "-f= not" numeric
+@attribute "String bar" numeric
+@attribute "of oddPrime" numeric
+@attribute "oddPrime requires" numeric
+@attribute "smallPrime to" numeric
+@attribute "to value" numeric
+@attribute "value other" numeric
+@attribute "other than" numeric
+@attribute "than two." numeric
+@attribute "-h a" numeric
 
 @data
 'Files/config/_.--abortProbability=1.5-s.err.raw',1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

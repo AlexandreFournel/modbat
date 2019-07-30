@@ -76,7 +76,7 @@ def generate_arff_doc(ngram,dirName,directory,thread):
         fd.write("@attribute fileNames string")
         fd.write("\n")
         for sequence in sequence_list:
-            fd.write("@attribute "+((sequence.replace(',', '_')).replace('\n', '')).replace(" ","__")+" numeric\n")
+            fd.write("@attribute "+"\""+(sequence.replace('\n', '')).replace("\"","\\\"")+"\""+" numeric\n")
         iter=0
         fd.write("\n")
         fd.write("@data")

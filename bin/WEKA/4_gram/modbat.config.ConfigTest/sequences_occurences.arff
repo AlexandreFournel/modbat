@@ -1,51 +1,51 @@
 @relation 4_gram
 
 @attribute fileNames string
-@attribute This__is__a__test numeric
-@attribute for__the__splash__screen numeric
-@attribute Option__Type__Value__Range numeric
-@attribute redirectOut__boolean__true__ numeric
-@attribute classpath__String__.__ numeric
-@attribute randomSeed__long__e9232493f22057d__ numeric
-@attribute smallPrime__int__two__{two_ numeric
-@attribute int__two__{two___three_ numeric
-@attribute two__{two___three___five_ numeric
-@attribute {two___three___five___seven} numeric
-@attribute abortProbability__double__0.0__0.0..1.0 numeric
-@attribute nRuns__int__50__1..inf numeric
-@attribute mode__String__exec__{dot_ numeric
-@attribute String__exec__{dot___exec} numeric
-@attribute someFlag__boolean__false__[1] numeric
-@attribute oddPrime__boolean__false__[2] numeric
-@attribute evenPrime__boolean__false__[3] numeric
-@attribute ConfigTest__vx.yz____ numeric
-@attribute Usage:__ConfigTest__[--OPTION=value]__... numeric
-@attribute ConfigTest__[--OPTION=value]__...__[FILE] numeric
-@attribute -h___--help__show__this numeric
-@attribute --help__show__this__help numeric
-@attribute show__this__help__and numeric
-@attribute this__help__and__exit numeric
-@attribute -s___--show__show__current numeric
-@attribute --show__show__current__configuration numeric
-@attribute -v___--version__show__version numeric
-@attribute --version__show__version__number numeric
-@attribute show__version__number__and numeric
-@attribute version__number__and__exit numeric
-@attribute --[no-]redirect-out__redirect__output__to numeric
-@attribute redirect__output__to__log numeric
-@attribute output__to__log__file numeric
-@attribute --classpath__overrides__environment__variable numeric
-@attribute overrides__environment__variable__CLASSPATH numeric
-@attribute environment__variable__CLASSPATH__if numeric
-@attribute variable__CLASSPATH__if__set numeric
-@attribute -s___--random-seed____ numeric
-@attribute --small-prime______ numeric
-@attribute --abort-probability______ numeric
-@attribute -n___--n-runs____ numeric
-@attribute --mode______ numeric
-@attribute --[no-]some-flag______ numeric
-@attribute --[no-]odd-prime______ numeric
-@attribute --[no-]even-prime______ numeric
+@attribute "This is a test" numeric
+@attribute "for the splash screen" numeric
+@attribute "Option Type Value Range" numeric
+@attribute "redirectOut boolean true " numeric
+@attribute "classpath String . " numeric
+@attribute "randomSeed long e9232493f22057d " numeric
+@attribute "smallPrime int two {two," numeric
+@attribute "int two {two, three," numeric
+@attribute "two {two, three, five," numeric
+@attribute "{two, three, five, seven}" numeric
+@attribute "abortProbability double 0.0 0.0..1.0" numeric
+@attribute "nRuns int 50 1..inf" numeric
+@attribute "mode String exec {dot," numeric
+@attribute "String exec {dot, exec}" numeric
+@attribute "someFlag boolean false [1]" numeric
+@attribute "oddPrime boolean false [2]" numeric
+@attribute "evenPrime boolean false [3]" numeric
+@attribute "ConfigTest vx.yz  " numeric
+@attribute "Usage: ConfigTest [--OPTION=value] ..." numeric
+@attribute "ConfigTest [--OPTION=value] ... [FILE]" numeric
+@attribute "-h, --help show this" numeric
+@attribute "--help show this help" numeric
+@attribute "show this help and" numeric
+@attribute "this help and exit" numeric
+@attribute "-s, --show show current" numeric
+@attribute "--show show current configuration" numeric
+@attribute "-v, --version show version" numeric
+@attribute "--version show version number" numeric
+@attribute "show version number and" numeric
+@attribute "version number and exit" numeric
+@attribute "--[no-]redirect-out redirect output to" numeric
+@attribute "redirect output to log" numeric
+@attribute "output to log file" numeric
+@attribute "--classpath overrides environment variable" numeric
+@attribute "overrides environment variable CLASSPATH" numeric
+@attribute "environment variable CLASSPATH if" numeric
+@attribute "variable CLASSPATH if set" numeric
+@attribute "-s, --random-seed  " numeric
+@attribute "--small-prime   " numeric
+@attribute "--abort-probability   " numeric
+@attribute "-n, --n-runs  " numeric
+@attribute "--mode   " numeric
+@attribute "--[no-]some-flag   " numeric
+@attribute "--[no-]odd-prime   " numeric
+@attribute "--[no-]even-prime   " numeric
 
 @data
 'Files/modbat.config.ConfigTest/_.-s.log.raw',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
