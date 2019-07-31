@@ -1,4 +1,0 @@
-[WARNING] java.lang.AssertionError: assertion failed: i = 0 occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/InvariantCheck.scala:14: reset => somestate; choices = (0.6395907)
-[WARNING] modbat/test/InvariantCheck.scala:8: invariantCheck

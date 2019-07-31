@@ -1,5 +1,0 @@
-[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/NextIfTest2.scala:7: ok => ok2
-[WARNING] modbat/test/NextIfTest2.scala:8: skip
-[WARNING] modbat/test/NextIfTest2.scala:10: assert

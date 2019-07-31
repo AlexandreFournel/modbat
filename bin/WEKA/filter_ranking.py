@@ -3,27 +3,26 @@ import os
 from threading import Thread
 import sys
 
-def filters(file1,file2, ngram, directory):
+def filters(file1,file2, ngram, destination):
     extension=["debug", "info", "error", "warning", "fine", "raw"]
     res=[0,0,0,0,0,0]
 
     for i in range(0, len(extension)):
-        if os.path.isfile(file1+"."+extension[i]) and os.path.isfile(file2+"."+extension[i]):
-            for line in open(ngram+directory+"Ranking", "r"):
-                if file1 in line and file2 in line:
+        if os.path.isfile(destination+file1+"."+extension[i]) and os.path.isfile(destination+file2+"."+extension[i]):
+            for line in open(destination+ngram+"/"+"Ranking", "r"):
+                if file1+"."+extension[i] in line and file2+"."+extension[i] in line:
                     res[i]=int( re.sub(r"^([0-9]+)\.[0-9]+$", "\\1", line.split("__")[0][:-1].replace(".","")),10)/10
-        elif os.path.isfile(file1+"."+extension[i])==False and os.path.isfile(file2+"."+extension[i])==False:
+        elif os.path.isfile(destination+"Files/"+file1+"."+extension[i])==False and os.path.isfile(destination+"Files/"+file2+"."+extension[i])==False:
             res[i]=-2
         else:
             res[i]=-1
     return (res)
 
-def filtering(ngrams, dirName, dirName_files, thread, percentage):
-    listOfFiles = list()
-    for (dirpath, dirnames, filenames) in os.walk(dirName_files):
-        listOfFiles += [os.path.join(dirpath, file) for file in filenames]
-    for i in range(len(listOfFiles)):
-        listOfFiles[i]=listOfFiles[i].rsplit(".",1)[0]
+def getListOfNgram(destination):
+    return ([name for name in os.listdir(destination) if (os.path.isdir(destination+"/"+name) and "gram" in name)])
+
+def filtering(destination, thread, percentage):
+    listOfFiles = getListOfFiles(destination+"OriginalFiles/")
     list(set(listOfFiles)) 
     length=len(listOfFiles)
     
@@ -43,8 +42,12 @@ def filtering(ngrams, dirName, dirName_files, thread, percentage):
     for i in range(lowLimit,highLimit):
         for j in range(i+1,length):
             total=0
-            for ngram in ngrams:
-                res=filters(listOfFiles[i],listOfFiles[j], ngram, dirName)
+            file1=(listOfFiles[i].replace(destination,"")).replace("//","/")
+            file2=(listOfFiles[j].replace(destination,"")).replace("//","/")
+            for ngram in getListOfNgram(destination):
+                file1=(file1).replace("OriginalFiles","Files")
+                file2=(file2).replace("OriginalFiles","Files")
+                res=filters(file1,file2, ngram, destination)
                 totalForNgram=sum(res)
                 inter=0
                 for h in res:
@@ -59,40 +62,48 @@ def filtering(ngrams, dirName, dirName_files, thread, percentage):
                             nb_superior_to_zero+=1
                     if nb_superior_to_zero!=0:
                         total += totalForNgram/nb_superior_to_zero
-            if total/4>float(percentage):
-                print(listOfFiles[i])
-                print(listOfFiles[j])
-                print("\n")
+            if total/len(getListOfNgram(destination))>float(percentage):
+                if file1!=file2:
+                    print(file1)
+                    print  ("has "+str(total/len(getListOfNgram(destination)))+" of similitudes with")
+                    print(file2)
+                    print("\n")
 
 class launch_threading(Thread):
-    def __init__(self, n_grams,dirName,dirName_files, number,percentage):
+    def __init__(self,destination, number,percentage):
         Thread.__init__(self)
         self.number = number
-        self.n_grams=n_grams
-        self.dirName=dirName
-        self.dirName_files=dirName_files
+        self.destination=destination
         self.percentage=percentage
 
     def run(self):
-        filtering(self.n_grams, self.dirName, self.dirName_files, self.number, self.percentage)
+        filtering(self.destination, self.number, self.percentage)
 
-def main(directory, ngrams, dirName_files,percentage):
-    for dirName in dirName_files:
-        thread_1 = launch_threading(ngrams,dirName,directory+dirName,1,percentage)
-        thread_2 = launch_threading(ngrams,dirName,directory+dirName,2,percentage)
-        thread_3 = launch_threading(ngrams,dirName,directory+dirName,3,percentage)
-        thread_4 = launch_threading(ngrams,dirName,directory+dirName,4,percentage)
+def getListOfFiles(destination):
+    listOfFiles=list()
+    for path, subdirs, files in os.walk(destination):
+        if len(files)!=0:
+                for name in files:
+                        listOfFiles+=[path+"/"+name]
+    return listOfFiles
 
-        # Lancement des threads
-        thread_1.start()
-        thread_2.start()
-        thread_3.start()
-        thread_4.start()
+def main(destination, percentage):
+    print("\n")
+    thread_1 = launch_threading(destination,1,percentage)
+    thread_2 = launch_threading(destination,2,percentage)
+    thread_3 = launch_threading(destination,3,percentage)
+    thread_4 = launch_threading(destination,4,percentage)
 
-        thread_1.join()
-        thread_2.join()
-        thread_3.join()
-        thread_4.join()
+    # Lancement des threads
+    thread_1.start()
+    thread_2.start()
+    thread_3.start()
+    thread_4.start()
+
+    thread_1.join()
+    thread_2.join()
+    thread_3.join()
+    thread_4.join()
 
 
 

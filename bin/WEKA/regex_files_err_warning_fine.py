@@ -8,10 +8,12 @@ import csv
 def isLineEmpty(line):
     return len(line.strip()) == 0
 
-def giveListOfFiles(subDirName, dirName):
-    listOfFiles = list()
-    for (dirpath, dirnames, filenames) in os.walk(dirName+subDirName):
-        listOfFiles += [os.path.join(dirpath, file) for file in filenames]
+def giveListOfFiles(destination):
+    listOfFiles=list()
+    for path, subdirs, files in os.walk(destination):
+        if len(files)!=0:
+                for name in files:
+                        listOfFiles+=[path+"/"+name]
     return listOfFiles
 
 def removeEmptyFiles(listOfFiles):
@@ -21,7 +23,7 @@ def removeEmptyFiles(listOfFiles):
     return
 
 def regex(listOfFiles):
-    for file in listOfFiles:
+    for file in listOfFiles:                
         readFile=open(file,"r")
         writeFile=open(file+"copy","w")
         for line in readFile:
@@ -38,9 +40,8 @@ def copy_remove(file):
     os.rename(file+"copy",file)
     return
 
-def main(subDirNameList, dirName):
-    for subDirName in subDirNameList:
-        listOfFiles=giveListOfFiles(subDirName, dirName)
-        regex(listOfFiles)
-        removeEmptyFiles(listOfFiles)
+def main(destination):
+    listOfFiles=giveListOfFiles(destination)
+    regex(listOfFiles)
+    removeEmptyFiles(listOfFiles)
     return

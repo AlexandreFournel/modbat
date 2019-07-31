@@ -1,8 +1,0 @@
-[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/LoopTest2.scala:9: skip
-[WARNING] modbat/test/LoopTest2.scala:10: assert
-[WARNING] modbat/test/LoopTest2.scala:10: assert
-[WARNING] modbat/test/LoopTest2.scala:10: assert
-[WARNING] modbat/test/LoopTest2.scala:10: assert
-[WARNING] modbat/test/LoopTest2.scala:12: assert

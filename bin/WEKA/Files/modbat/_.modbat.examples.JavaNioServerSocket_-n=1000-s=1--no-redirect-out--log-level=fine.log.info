@@ -1,7 +1,0 @@
-[INFO] 1000 tests executed, 972 ok, 28 failed.
-[INFO] One type of test failure:
-[INFO] 1) java.lang.AssertionError: assertion failed at readFrom
-[INFO]    402b73cd0066eaea 19b6aa1b14a29017 af39d7b440c7619 29f82abd2be12950 2b18082b1bd0dc96 133202bc25957d90 88af43883571af0c 69bff9e70d82f564 1e722f5a2e3246cb 4a48affe2f9f1eec 72d25cc409059603 5e266594310b253e 2856c6312e4eff2a 77a0fd973e5a7f16 202770fe19b24c8c 426981ef1f5d935d 8f65c44a1e1e02d9 6444c61118268f28 26179a5519153bb7 769392035d2b8fa 75100d3b0a0e085b 7f3d11840c56e036 24573c050945117d 48e6858622f077f5 6e1dc0fd3d52640f 88c05e902ee96a2a 6231d53e20af3a22 1e7e66d92e12a205
-[INFO] 7 states covered (100 % out of 7),
-[INFO] 17 transitions covered (100 % out of 17).
-[INFO] Random seed for next test would be: 4557745f20abfec0

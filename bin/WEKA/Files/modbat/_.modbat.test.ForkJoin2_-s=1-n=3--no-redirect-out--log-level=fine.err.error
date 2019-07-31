@@ -1,6 +1,0 @@
-[ERROR] modbat.test.ForkJoin2-1 calls join on model of type class modbat.test.ForkJoin2, which has not been launched yet.
-[ERROR] modbat.dsl.JoinWithoutLaunchException
-[ERROR] modbat.test.ForkJoin2-1 calls join on model of type class modbat.test.ForkJoin2, which has not been launched yet.
-[ERROR] modbat.dsl.JoinWithoutLaunchException
-[ERROR] modbat.test.ForkJoin2-1 calls join on model of type class modbat.test.ForkJoin2, which has not been launched yet.
-[ERROR] modbat.dsl.JoinWithoutLaunchException

@@ -1,6 +1,0 @@
-[WARNING] java.lang.IllegalArgumentException: requirement failed occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/SUTReq.scala:12: fail
-[WARNING] java.lang.IllegalArgumentException: requirement failed occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/SUTReq.scala:12: fail

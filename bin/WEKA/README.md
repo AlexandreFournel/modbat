@@ -4,10 +4,11 @@ Here is available severals program to analyse Log Errors Modbat files.
 All these python programs and the shell executable file are managed by main.py program. 
 
 Python version used : Python 3.6.5 :: Anaconda, Inc.
+WEKA version used : 3.8.3 
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install progress.
 
 ```bash
 pip install progress
@@ -26,31 +27,26 @@ With .log and .err files in modbat/log/ {modbat, config, modbat.config.ConfigTes
 In the original file, if the line begins with [INFO], this lines will be added to the .info file generated.
 
 ```bash
-python3 main.py generateFiles
+python3 main.py generateFiles originRepository ResultRepository ExtensionOfFilesWeWantToStudy
 ```
-A Folder "Files", in this current repository, will created. In it, 3 folder {modbat, config, modbat.config.ConfigTest} will all the files generated in them. 
 
-### Filter Subfiles
-For each file with the following extension:
-   - .warning
-   - .debug
-   - .info
-   - .fine
-   - .error
-   - .raw
-we can replace or delete lines if regex matches. In this current version, we are only filtering lines where seeds are not preceded by prefix (as [INFO] for example)
-All empty files in Files/{modbat, config, modbat.config.ConfigTest} are removed to have faster program. 
-To change the rules of filtering, please add what you want in regex.regex_files_err_warning_fine.py .
-
+Example:
 ```bash
-python3 main.py filterFiles
+python3 main.py generateFiles ../log/ results/ err log
 ```
+
+A Folder "Files", in this current repository, will created. In it, the different files generated and filtred. 
 
 ### Generate Ngram
 It is possible to generate a list of unique ngram (1gram, 2gram, 3gram and 4gram) by folder {modbat, config, modbat.config.ConfigTest}. 
 
 ```bash
-python3 main.py generateNGram
+python3 main.py generateNGram ResultRepository ngrams
+```
+
+Example
+```bash
+python3 main.py generateNGram Results/ 1 2 3 4 5
 ```
 
 4 folders are generated {1gram, 2gram, 3gram, 4gram}. 
@@ -72,7 +68,12 @@ It is possible to generate
 in {1gram, 2gram, 3gram, 4gram}/{modbat, config, modbat.config.ConfigTest}
 
 ```bash
-python3 main.py generateNGramByFile
+python3 main.py generateNGramByFile ResultRepository ngrams
+```
+
+Example 
+```bash
+python3 main.py generateNGramByFile Results/ 1 2 3 4 5
 ```
 
 To generate it, it is necessary to have updated version of 
@@ -93,7 +94,12 @@ It is possible to generate
 in {1gram, 2gram, 3gram, 4gram}/{modbat, config, modbat.config.ConfigTest}
 
 ```bash
-python3 main.py rankSimilarities
+python3 main.py rankSimilarities ResultRepository ngrams
+```
+
+Example
+```bash
+python3 main.py rankSimilarities Results/ 1 2 3 4 5
 ```
 
 To generate it, it is necessary to have updated version of 
@@ -109,7 +115,7 @@ In other words, every 2 files are compared. Thanks to the Jaccard Index, we are 
 
 
 ### Print Every 2 Files If They Have More Than x% of Similarities
-It is possible to print a 2-files-list which have more than X percentage of similarities. 
+It is possible to print a list of 2 files which have more than X percentage of similarities. 
 
 This file use a python program which returns a list of 6 value. For 2 different files, for a certain ngram, the elements of this list are equals to the percentage of similarities between :
    - file1.warning and file2.warning
@@ -122,9 +128,13 @@ This file use a python program which returns a list of 6 value. For 2 different 
 The main program recover these lists for every ngram, averages the result and print the 2 lists if the average result is bigger than the percentage you choose. 
 
 ```bash
-python3 main.py listOfSimilarFiles 97    # if you want files with 97% or more similarities. 
+python3 main.py listOfSimilarFiles ResultRepository Pourcentage    
 ```
 
+Example
+```bash
+python3 main.py listOfSimilarFiles Results/ 50
+```
 To generate it, it is necessary to have updated version of 
    - Ranking
 
@@ -133,7 +143,7 @@ To generate it, it is necessary to have updated version of
 It is possible to generate ARFF files by folder {1gram, 2gram, 3gram and 4gram}/{modbat, config, modbat.config.ConfigTest}. 
 
 ```bash
-python3 main.py generateArffDoc
+python3 main.py generateArffDoc Results/ 1 2 3 4 5
 ```
 
 This will create sequences_occurences.arff files in the different folders. 
@@ -150,45 +160,53 @@ To generate it, it is necessary to have updated version of
 It is possible to generate ARFF files by folder {1gram, 2gram, 3gram and 4gram}/{modbat, config, modbat.config.ConfigTest}. 
 
 ```bash
-python3 main.py test2Files nameFile1 nameFile2
+python3 main.py test2Files ResultRepository nameFile1 nameFile2
 ```
 
 Example:
 ```bash
-python3 main.py test2Files Files/modbat/_.modbat.test.ComplexLaunch6_-s\=1-n\=2--log-level\=fine--no-redirect-out.log Files/modbat/_.modbat.test.ComplexLaunch5_-s\=1-n\=2--log-level\=fine--no-redirect-out.log 
+python3 main.py test2Files Results/ Results/OriginalFiles/modbat_modbat.test.ComplexLaunch6_-s\=1-n\=2--log-level\=fine--no-redirect-out.log Results/OriginalFiles/modbat_modbat.test.ComplexLaunch5_-s\=1-n\=2--log-level\=fine--no-redirect-out.log
 ```
 Result
 ```bash
-1_gram/ -> debug=-Doesn't exist-
-1_gram/ -> info=89.4
-1_gram/ -> error=-Doesn't exist-
-1_gram/ -> warning=-Doesn't exist-
-1_gram/ -> fine=89.4
-1_gram/ -> raw=89.4
+5_gram -> debug=-Doesn't exist-
+5_gram -> info=65.9
+5_gram -> error=-Doesn't exist-
+5_gram -> warning=-Doesn't exist-
+5_gram -> fine=28.3
+5_gram -> raw=100.0
 
 
-2_gram/ -> debug=-Doesn't exist-
-2_gram/ -> info=77.4
-2_gram/ -> error=-Doesn't exist-
-2_gram/ -> warning=-Doesn't exist-
-2_gram/ -> fine=77.4
-2_gram/ -> raw=77.4
+4_gram -> debug=-Doesn't exist-
+4_gram -> info=70.9
+4_gram -> error=-Doesn't exist-
+4_gram -> warning=-Doesn't exist-
+4_gram -> fine=41.1
+4_gram -> raw=100.0
 
 
-3_gram/ -> debug=-Doesn't exist-
-3_gram/ -> info=74.6
-3_gram/ -> error=-Doesn't exist-
-3_gram/ -> warning=-Doesn't exist-
-3_gram/ -> fine=74.6
-3_gram/ -> raw=74.6
+3_gram -> debug=-Doesn't exist-
+3_gram -> info=74.6
+3_gram -> error=-Doesn't exist-
+3_gram -> warning=-Doesn't exist-
+3_gram -> fine=50.0
+3_gram -> raw=100.0
 
 
-4_gram/ -> debug=-Doesn't exist-
-4_gram/ -> info=70.9
-4_gram/ -> error=-Doesn't exist-
-4_gram/ -> warning=-Doesn't exist-
-4_gram/ -> fine=70.9
-4_gram/ -> raw=70.9
+2_gram -> debug=-Doesn't exist-
+2_gram -> info=77.4
+2_gram -> error=-Doesn't exist-
+2_gram -> warning=-Doesn't exist-
+2_gram -> fine=56.5
+2_gram -> raw=100.0
+
+
+1_gram -> debug=-Doesn't exist-
+1_gram -> info=89.4
+1_gram -> error=-Doesn't exist-
+1_gram -> warning=-Doesn't exist-
+1_gram -> fine=75.2
+1_gram -> raw=100.0
 ```
 
 To generate it, it is necessary to have updated version of 

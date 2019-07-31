@@ -1,6 +1,0 @@
-[INFO] 30 tests executed, 30 ok, 0 failed.
-[INFO] modbat.test.ForkJoin: 3 states covered (100 % out of 3),
-[INFO] modbat.test.ForkJoin: 2 transitions covered (100 % out of 2).
-[INFO] modbat.test.Worker: 2 states covered (100 % out of 2),
-[INFO] modbat.test.Worker: 1 transitions covered (100 % out of 1).
-[INFO] Random seed for next test would be: 7073195f4478074f

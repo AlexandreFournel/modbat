@@ -1,4 +1,0 @@
-[WARNING] java.lang.AssertionError: assertion failed occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/ExcTest5.scala:8: mcZ
-[WARNING] modbat/test/ExcTest5.scala:12: assert

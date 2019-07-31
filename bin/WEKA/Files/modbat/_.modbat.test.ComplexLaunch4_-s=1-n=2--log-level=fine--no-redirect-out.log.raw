@@ -1,8 +1,0 @@
-init
-companion-before
-companion-after
-companion-before
-child-companion:before
-child-companion:after
-companion-after
-shutdown

@@ -1,5 +1,0 @@
-[ERROR] java.lang.IllegalArgumentException: not from failed require
-[ERROR] 	at modbat.test.IllArgTest.illArg(IllArgTest.scala)
-[ERROR] 	at modbat.test.IllArgTest$$anonfun$1.apply$mcV$sp(IllArgTest.scala)
-[ERROR] 	at modbat.test.IllArgTest$$anonfun$1.apply(IllArgTest.scala)
-[ERROR] 	at modbat.test.IllArgTest$$anonfun$1.apply(IllArgTest.scala)

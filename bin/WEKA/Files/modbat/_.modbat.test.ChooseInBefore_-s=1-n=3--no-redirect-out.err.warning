@@ -1,3 +1,0 @@
-[WARNING] java.lang.AssertionError: assertion failed: n = 2 occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/ChooseInBefore.scala:14: assert; choices = (2)

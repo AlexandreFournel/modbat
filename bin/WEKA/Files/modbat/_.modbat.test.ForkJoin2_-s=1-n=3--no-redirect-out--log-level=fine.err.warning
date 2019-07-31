@@ -1,9 +1,0 @@
-[WARNING] modbat.dsl.JoinWithoutLaunchException occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/ForkJoin2.scala:7: join
-[WARNING] modbat.dsl.JoinWithoutLaunchException occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/ForkJoin2.scala:7: join
-[WARNING] modbat.dsl.JoinWithoutLaunchException occurred, aborting.
-[WARNING] Error found, model trace:
-[WARNING] modbat/test/ForkJoin2.scala:7: join
