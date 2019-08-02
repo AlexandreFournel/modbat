@@ -1,7 +1,8 @@
 # Programs for analysis Log Err for Modbat Files. 
 
-Here is available severals program to analyse Log Errors Modbat files. 
-All these python programs and the shell executable file are managed by main.py program. 
+Here is available severals program to analyse files. This project could be adaptable to others projects.
+
+The main.py Python program is managing, and supervising all the others programs. 
 
 Python version used : Python 3.6.5 :: Anaconda, Inc.
 WEKA version used : 3.8.3 
@@ -16,41 +17,58 @@ pip install progress
 
 ## Usage
 
-### Generate Subfiles
-With .log and .err files in modbat/log/ {modbat, config, modbat.config.ConfigTest}, for each file, you can generate 6 files, with the following extension:
-   - .warning
-   - .debug
-   - .info
-   - .fine
-   - .error
-   - .raw
-In the original file, if the line begins with [INFO], this lines will be added to the .info file generated.
+### Generate Subfiles filtred.
+From a repository where you have all your files (and subfiles, subsubfiles...) you can generate filtering to preprocess your data. 
+
 
 ```bash
 python3 main.py generateFiles originRepository ResultRepository ExtensionOfFilesWeWantToStudy
 ```
 
+From the Original repository, you can select all the files with the good extension. From a repository, for example in "../log/" , you can have different different filename extension. If you want to analyse only ".log" and ".err" files, and put the result in a new folder "Results/" for example, please launch :
+
 Example:
 ```bash
-python3 main.py generateFiles ../log/ results/ err log
+python3 main.py generateFiles ../log/ Results/ err log
 ```
 
-A Folder "Files", in this current repository, will created. In it, the different files generated and filtred. 
+In the Results/ Folder will be created 2 Folders : 
+   - OriginalFiles/ which contains all the selected files (all the .log and .err files in the example)
+   - Files/  which countains subfiles filtred. 
+   For each file in OriginalFiles/, the program create 6 files with the following filename extension : 
+      - OriginalFileName.info
+      - OriginalFileName.warning
+      - OriginalFileName.raw
+      - OriginalFileName.fine
+      - OriginalFileName.error
+      - OriginalFileName.debug
+   From the OriginalFileName, we select all the lines beginning by [INFO], and copy them in the OriginalFileName.info. (Same behavior for the other extensions)
+   For the .raw file are presented all the lines which didn't match at the previous step.
+   
+   In this folder, all the lines beginning by a random seed are removed. 
+   Every empty file is deleted.
 
 ### Generate Ngram
-It is possible to generate a list of unique ngram (1gram, 2gram, 3gram and 4gram) by folder {modbat, config, modbat.config.ConfigTest}. 
+It is possible to generate a list of unique ngram (1gram, 2gram, 3gram, 4gram, others). 
+
+
 
 ```bash
 python3 main.py generateNGram ResultRepository ngrams
 ```
 
+With the previous example, 
 Example
 ```bash
 python3 main.py generateNGram Results/ 1 2 3 4 5
 ```
 
-4 folders are generated {1gram, 2gram, 3gram, 4gram}. 
-In them, 3 folders {modbat, config, modbat.config.ConfigTest} which countain 2 generated files :
+The program uses the folder "Files/" in the "Results/" repository created at the step 1. 
+
+With the execution of this program, folders are created in "Results/". If you write "1 2 3 4 5" as an argument. 5 folders wwill be created, and called :  
+{1_gram/, 2_gram/, 3_gram/, 4_gram/,  5_gram/}. 
+
+In them, 2 generated files :
    - sequence_list
    - sequence_list_with_name_files
 The first one is the list of unique ngram. 
@@ -60,12 +78,13 @@ Each line is composed by :
 ```text
 nameOfFile__ngram
 ```
+
 In this last files, lines are not unique. 
 
 ### Generate Ngram By Files
 It is possible to generate 
    - sequence_list_by_files
-in {1gram, 2gram, 3gram, 4gram}/{modbat, config, modbat.config.ConfigTest}
+in n_gram/ folder, by launching : 
 
 ```bash
 python3 main.py generateNGramByFile ResultRepository ngrams
@@ -76,6 +95,8 @@ Example
 python3 main.py generateNGramByFile Results/ 1 2 3 4 5
 ```
 
+In this example, the files will be created in 5 repository : {1_gram/, 2_gram/, 3_gram/, 4_gram/,  5_gram/}
+
 To generate it, it is necessary to have updated version of 
    - sequence_list
    - sequence_list_with_name_files
@@ -85,14 +106,13 @@ The "sequence_list_by_files" lines are composed by :
 ngram__nameOfFile1::occurence__nameOfFile2::occurence__ ... __nameOfFile?::occurence
 ```
 
-In other words, each line of this file lists one unique ngram with the name of the different files where the ngram appear. The file name is followed by the occurence. 
+In other words, each line of this file lists one unique ngram with the name of the different files where the ngram appears. The file name is followed by the occurence. 
 
 
 ### Generate A Ranking of Similarities Between 2 Files
 It is possible to generate 
    - Ranking
-in {1gram, 2gram, 3gram, 4gram}/{modbat, config, modbat.config.ConfigTest}
-
+by launching :
 ```bash
 python3 main.py rankSimilarities ResultRepository ngrams
 ```
@@ -101,6 +121,7 @@ Example
 ```bash
 python3 main.py rankSimilarities Results/ 1 2 3 4 5
 ```
+In this example, the file will be created in 5 repository : {1_gram/, 2_gram/, 3_gram/, 4_gram/,  5_gram/}
 
 To generate it, it is necessary to have updated version of 
    - sequence_list_by_files
@@ -117,15 +138,16 @@ In other words, every 2 files are compared. Thanks to the Jaccard Index, we are 
 ### Print Every 2 Files If They Have More Than x% of Similarities
 It is possible to print a list of 2 files which have more than X percentage of similarities. 
 
-This file use a python program which returns a list of 6 value. For 2 different files, for a certain ngram, the elements of this list are equals to the percentage of similarities between :
+This file use a python program which returns a list of 6 value. For 2 different files, the program recovers the comparison of these files :
    - file1.warning and file2.warning
    - file1.error and file2.error
    - file1.info and file2.info
    - file1.debug and file2.debug
    - file1.fine and file2.fine
    - file1.raw and file2.raw
+The programs average these result. Automatically, it executed this average for the different n_gram folders already existing. 
 
-The main program recover these lists for every ngram, averages the result and print the 2 lists if the average result is bigger than the percentage you choose. 
+The programs does the average of the comparison results of the different Folders ngram. It prints every pairs of files where the comparison is superior to a limit put by the user. 
 
 ```bash
 python3 main.py listOfSimilarFiles ResultRepository Pourcentage    
@@ -135,18 +157,36 @@ Example
 ```bash
 python3 main.py listOfSimilarFiles Results/ 50
 ```
+
+With the previous example, the programs will avreage the comparison of 
+   - file1.warning and file2.warning
+   - file1.error and file2.error
+   - file1.info and file2.info
+   - file1.debug and file2.debug
+   - file1.fine and file2.fine
+   - file1.raw and file2.raw
+For different ngram {1_gram/, 2_gram/, 3_gram/, 4_gram/,  5_gram/}.
+
 To generate it, it is necessary to have updated version of 
-   - Ranking
+   - Ranking 
+in the different existing folders 
 
 
 ### Generate Arff Files compatible with WEKA software
-It is possible to generate ARFF files by folder {1gram, 2gram, 3gram and 4gram}/{modbat, config, modbat.config.ConfigTest}. 
+It is possible to generate ARFF files by folder . 
 
 ```bash
-python3 main.py generateArffDoc Results/ 1 2 3 4 5
+python3 main.py generateArffDoc ResultRepository ngrams
 ```
 
-This will create sequences_occurences.arff files in the different folders. 
+This will create sequences_occurences.arff files in the different folders.
+
+Example:
+```bash
+python3 main.py generateArffDoc Result/ 1 2 3 4 5
+```
+
+in {1_gram/, 2_gram/, 3_gram/, 4_gram/,  5_gram/} Folders, the file sequences_occurrences.arff will be created. 
 
 The "sequences_occurences.arff" lines are composed by :
 ```text
@@ -157,7 +197,7 @@ To generate it, it is necessary to have updated version of
    - sequence_list
 
 ### Test The Similarities Of 2 Files
-It is possible to generate ARFF files by folder {1gram, 2gram, 3gram and 4gram}/{modbat, config, modbat.config.ConfigTest}. 
+It's possible to test the similitudes between 2 files for differnet ngram. 
 
 ```bash
 python3 main.py test2Files ResultRepository nameFile1 nameFile2
@@ -167,7 +207,7 @@ Example:
 ```bash
 python3 main.py test2Files Results/ Results/OriginalFiles/modbat_modbat.test.ComplexLaunch6_-s\=1-n\=2--log-level\=fine--no-redirect-out.log Results/OriginalFiles/modbat_modbat.test.ComplexLaunch5_-s\=1-n\=2--log-level\=fine--no-redirect-out.log
 ```
-Result
+The Results will be : (because these folders {1_gram/, 2_gram/, 3_gram/, 4_gram/,  5_gram/} exist)
 ```bash
 5_gram -> debug=-Doesn't exist-
 5_gram -> info=65.9
